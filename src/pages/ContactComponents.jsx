@@ -25,9 +25,10 @@ const TitleLink = styled.div`
   color: #bdbdbd;
 `;
 
-const ContactLink = styled.span`
+const ContactLink = styled.a`
   font-size: 1.4em;
   color: #fff;
+  cursor: pointer;
   @media (max-width: 660px) {
     font-size: 1em;
   }
@@ -38,12 +39,15 @@ const ContactLink = styled.span`
 
 const SocialName = styled.div`
   display: flex;
-
-  span:nth-of-type(2) {
+  a {
+    padding: 0px 10px;
     border-right: 1px solid #52504d;
-    border-left: 1px solid #52504d;
-    padding: 0px 16px;
-    margin: 0 13px;
+  }
+  a:first-child {
+    padding-left: 0;
+  }
+  a:nth-of-type(4) {
+    border-right: 0px solid #52504d;
   }
 `;
 
@@ -60,13 +64,15 @@ export default function ContactComponents({ info }) {
         {names.length >= 3 ? (
           <SocialName>
             {names.map((nameItem, index) => (
-              <ContactLink key={index}>
+              <ContactLink href={nameItem.link} target="_blank" key={index}>
                 {nameItem.mediaName || nameItem}
               </ContactLink>
             ))}
           </SocialName>
         ) : (
-          <ContactLink>{names[0].mediaName || names[0]}</ContactLink>
+          <ContactLink href={info.link} target="_blank">
+            {names[0].mediaName || names[0]}
+          </ContactLink>
         )}
       </List>
     </LinkedList>

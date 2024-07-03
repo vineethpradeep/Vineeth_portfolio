@@ -109,7 +109,7 @@ const Button = styled.a`
 `;
 
 const ProjectDetails = ({ selectedProject }) => {
-  console.log("project details");
+  console.log(selectedProject);
   return (
     <Container>
       <Wrapper>
@@ -121,14 +121,16 @@ const ProjectDetails = ({ selectedProject }) => {
           ))}
         </Tags>
         <Desc>{selectedProject?.description}</Desc>
-        <ButtonGroup>
-          <Button secondary={true} href={selectedProject.github} target="new">
-            View Code
-          </Button>
-          <Button target="new" href={selectedProject.webapp}>
-            View Live App
-          </Button>
-        </ButtonGroup>
+        {selectedProject.category === "webApp" && (
+          <ButtonGroup>
+            <Button secondary={true} href={selectedProject.github} target="new">
+              View Code
+            </Button>
+            <Button target="new" href={selectedProject.webapp}>
+              View Live App
+            </Button>
+          </ButtonGroup>
+        )}
       </Wrapper>
     </Container>
   );

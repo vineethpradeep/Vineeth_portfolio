@@ -79,6 +79,9 @@ const QuickLinkBox = styled.div`
 `;
 
 export default function QuickLink() {
+  function navigateToFile(filepath) {
+    window.open(filepath, "_blank", "noopener,noreferrer");
+  }
   return (
     <QLContainer>
       <Wrapper>
@@ -116,7 +119,9 @@ export default function QuickLink() {
           duration={500}
           offset={-100}
         >
-          <QuickLinkBox>
+          <QuickLinkBox
+            onClick={() => navigateToFile("/vineeth_pradeep_cv.pdf")}
+          >
             <p>
               <BsCloudDownload />
             </p>

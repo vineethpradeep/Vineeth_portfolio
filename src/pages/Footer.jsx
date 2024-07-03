@@ -10,7 +10,7 @@ const FooterContainer = styled.div`
 export default function Footer() {
   return (
     <FooterContainer>
-      {`© Copyright ${new Date().getFullYear()}. All Rights Reserved. It is my Theme & my Dream | Vineeth
+      {`© Copyright ${new Date().getFullYear()}. All Rights Reserved. It is my theme | Vineeth
       Pradeep Portfolio.`}
     </FooterContainer>
   );
