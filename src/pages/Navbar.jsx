@@ -16,7 +16,7 @@ import { HiOutlineMenuAlt4, HiOutlineX } from "react-icons/hi";
 const Container = styled.div``;
 const Nav = styled.nav`
   position: fixed;
-  top: 8.7%;
+  top: 8.2%;
   left: 10%;
   z-index: 2;
   box-shadow: 0px 0px 80px 0px rgba(62, 62, 62, 0.3);

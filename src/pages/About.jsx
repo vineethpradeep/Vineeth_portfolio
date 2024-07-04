@@ -45,9 +45,7 @@ export default function About() {
           team or working alone, my enthusiasm, dedication, and meticulousness
           always provide excellent results. I am an accomplished front-end
           developer that is eager to meet with you to talk about the possibility
-          of contributing to your next project. My background is in design, and
-          I am committed to providing high-quality work. I also like being
-          creative.
+          of contributing to your next project.
         </ToggleParagraph>
       </Wrapper>
     </StyledElement>
