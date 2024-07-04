@@ -16,7 +16,7 @@ const StyledHeader = styled.div`
     height: 850px;
   }
   @media (max-width: 768px) {
-    height: 910px;
+    height: 940px;
   }
 `;
 
@@ -163,11 +163,15 @@ const LinkText = styled.span`
     display: inline-block;
     text-align: left;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media (max-width: 768px) {
     display: inline-block;
     text-align: left;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
   }
   a {
     @media (max-width: 660px) {
