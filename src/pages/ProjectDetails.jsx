@@ -109,7 +109,6 @@ const Button = styled.a`
 `;
 
 const ProjectDetails = ({ selectedProject }) => {
-  console.log(selectedProject);
   return (
     <Container>
       <Wrapper>

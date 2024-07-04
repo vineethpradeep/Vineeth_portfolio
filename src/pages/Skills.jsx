@@ -130,7 +130,6 @@ const StyledElement = styled(Element)`
 `;
 
 function Skills() {
-  console.log("skills");
   return (
     <StyledElement name="skills">
       <Container>

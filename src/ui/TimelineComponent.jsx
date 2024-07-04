@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "../styles/style.min.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,

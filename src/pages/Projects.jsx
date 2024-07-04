@@ -19,7 +19,6 @@ const StyledElement = styled(Element)`
   width: 100%;
 `;
 export default function Projects() {
-  console.log("project");
   return (
     <StyledElement name="projects">
       <ProjectContainer>

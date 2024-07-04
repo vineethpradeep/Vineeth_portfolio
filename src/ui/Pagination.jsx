@@ -21,7 +21,6 @@ const PageNumber = styled.button`
 `;
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
-  console.log("totalPages", totalPages);
   const handlePageChange = (page) => {
     if (page !== currentPage) {
       onPageChange(page);

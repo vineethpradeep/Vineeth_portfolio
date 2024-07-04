@@ -22,7 +22,6 @@ const StyledElement = styled(Element)`
 `;
 
 export default function Experience() {
-  console.log("experience");
   return (
     <StyledElement name="experience">
       <Container>

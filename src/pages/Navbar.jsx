@@ -73,12 +73,10 @@ const NavLink = styled(Link)`
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(true);
   function handleNav() {
-    console.log("true");
     setMobileMenu((menu) => !menu);
   }
   useEffect(function () {
     const contactYPos = window.screenY;
-    console.log(contactYPos);
   }, []);
   return (
     <Container mobileMenu>

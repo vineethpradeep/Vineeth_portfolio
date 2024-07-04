@@ -55,7 +55,6 @@ function TabComponent() {
     setCurrentTab(id);
     setCurrentPage(1);
   }
-  console.log("tab");
   return (
     <>
       <TabContainer>
@@ -89,7 +88,6 @@ function Tab({ id, activeTab, onClick, tabName }) {
 
 function TabContant({ projectsItem, onCurrentPage, currentPage }) {
   const { projects } = projectsItem;
-  console.log(projectsItem);
   const itemsPerPage = 3;
 
   const startIndex = (currentPage - 1) * itemsPerPage;
