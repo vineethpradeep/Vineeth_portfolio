@@ -439,7 +439,6 @@ export const contactInfo = [
         mediaName: "Linkedin",
         link: "https://www.linkedin.com/in/vineeth-ui-developer",
       },
-      { mediaName: "Twitter", link: "https://x.com/vineethSPradeep" },
       { mediaName: "Facebook", link: "https://www.facebook.com/login" },
       { mediaName: "Instagram", link: "https://www.instagram.com" },
     ],
