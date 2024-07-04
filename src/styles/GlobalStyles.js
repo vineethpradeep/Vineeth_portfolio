@@ -105,4 +105,34 @@ img {
   /* For dark mode */
   filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
+
+@media only screen and (min-width: 1170px) {
+  
+    .vertical-timeline.vertical-timeline--two-columns:before {
+        background-color: #ccccca;
+    }
+     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+        font-size: 21px;
+        font-size: 1.4rem
+    }
+
+     .vertical-timeline-element-content p {
+        font-size: 21px;
+        font-size: 1.4rem
+    }
+}
+@media only screen and (min-width: 768px) {
+   .vertical-timeline-element-content p {
+        font-size: 21px;
+        font-size: 1.4rem
+    }
+     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+        font-size: 21px;
+        font-size: 1.4rem
+    }
+     .vertical-timeline.vertical-timeline--two-columns:before {
+        background-color: #ccccca;
+    }
+}
+
 `;
