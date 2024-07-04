@@ -146,11 +146,6 @@ export const skills = [
         color: "#30ae75",
         icon: SiSupabase,
       },
-      {
-        name: "Vercel",
-        color: "#000000",
-        icon: SiVercel,
-      },
     ],
   },
   {
@@ -171,6 +166,11 @@ export const skills = [
         name: "Netlify",
         color: "#23c0ba",
         icon: SiNetlify,
+      },
+      {
+        name: "Vercel",
+        color: "#000000",
+        icon: SiVercel,
       },
       {
         name: "Postman",
