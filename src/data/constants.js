@@ -333,7 +333,7 @@ export const projects = [
         projectId: 0,
         title: "Pizzahud",
         description:
-          "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete goods from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
+          "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
         image: "/portfolio_1.png",
         tags: [
           "React Js",

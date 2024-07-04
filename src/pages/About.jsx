@@ -21,33 +21,33 @@ export default function About() {
       <Wrapper>
         <Title>About Me</Title>
         <ToggleParagraph>
-          I am a motivated and versatile individual, always eager to take on new
-          challenges. With a passion for learning I am dedicated to delivering
-          high-quality results. With a positive attitude and a growth mindset, I
-          am ready to make a meaningful contribution and achieve great things.
-          My enthusiasm and knowledge are assets to each project I work on,
-          thanks to my more than a decade of experience in user interface and
-          online front-end development. Since my early days learning JavaScript,
-          HTML, and CSS, my expertise in the IT business has grown to include
-          more complex frameworks like React, Redux, and Angular. Because of my
-          varied skill set, I am able to create web apps that are responsive,
-          aesthetically pleasing, and very powerful, all while giving users an
-          excellent experience. I have also spent time perfecting my visual
-          design abilities, which complement my technical proficiency. With my
-          education and experience in design under my belt, I am well-equipped
-          to create interfaces that are both useful and visually appealing. The
-          need to always challenge myself is what drives my enthusiasm for
-          front-end development. To keep my work fresh while still meeting or
-          exceeding expectations, I make it a point to research and read up on
-          current trends and best practices in my field. My work is
-          characterised by a strong emphasis on creativity. I take immense pride
-          in always exceeding customer expectations with my high-quality work
-          and in my ability to solve difficult challenges in novel ways. All of
-          my projects, whether I'm working alone or with a team, benefit from my
-          passion, commitment, and attention to detail. I am an experienced
-          front-end developer with a solid foundation in design, a dedication to
-          quality, a love of creativity, and a desire to meet with you to
-          discuss how I may be a part of your next project.
+          I am a highly-motivated and adaptable person who is always looking for
+          new challenges. Thanks to my insatiable need for knowledge, I am
+          committed to providing excellent service. Being optimistic and having
+          a development mentality have prepared me to make a significant impact
+          and accomplish remarkable things. With over a decade of expertise in
+          web front-end and user interface development, my passion and expertise
+          are valuable additions to every project I take on. My experience in
+          the IT industry has expanded from my early days of studying frontend
+          technology. The breadth and depth of my skill set allow me to design
+          and develop online applications that not only meet but exceed user
+          expectations in terms of responsiveness, aesthetics, and power. Along
+          with my technical expertise, I have dedicated a great deal of effort
+          to honing my visual design skills. I am able to create interfaces that
+          are both pleasing and functional. I am passionate about front-end
+          programming because I need to constantly push myself. Researching and
+          reading up on current trends and best practices in my sector allows me
+          to keep my work fresh while still meeting or surpassing expectations.
+          An focus on originality is inherent in my work. I am quite proud of my
+          ability to consistently come up with innovative solutions to
+          challenging problems and of the excellent quality of my work, both of
+          which consistently surpass client expectations. Whether I'm part of a
+          team or working alone, my enthusiasm, dedication, and meticulousness
+          always provide excellent results. I am an accomplished front-end
+          developer that is eager to meet with you to talk about the possibility
+          of contributing to your next project. My background is in design, and
+          I am committed to providing high-quality work. I also like being
+          creative.
         </ToggleParagraph>
       </Wrapper>
     </StyledElement>
