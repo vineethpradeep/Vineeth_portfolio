@@ -136,8 +136,8 @@ function Skills() {
         <Wrapper>
           <Title>Skills</Title>
           <Desc>
-            These are just a few of my abilities that I have been honing over
-            the last nine years.
+            Here are some of the skills that I have refined over the past nine
+            years.
           </Desc>
           <SkillsContainer>
             {skills.map((skill) => (
