@@ -46,7 +46,7 @@ const SocialName = styled.div`
   a:first-child {
     padding-left: 0;
   }
-  a:nth-of-type(4) {
+  a:nth-of-type(3) {
     border-right: 0px solid #52504d;
   }
 `;
