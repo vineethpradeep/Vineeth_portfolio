@@ -91,10 +91,10 @@ export default function Education() {
               </Icon>
               <Degree>{education.degree}</Degree>
               <School>{education.school}</School>
-              <Group>
+              {/* <Group>
                 <Date>{education.date}</Date>
                 <Grade>{education.grade}</Grade>
-              </Group>
+              </Group> */}
             </Box>
           ))}
         </Boxcontainer>
