@@ -320,14 +320,6 @@ export const educations = [
     grade: "3 GPA",
     degree: "BSc Physics",
   },
-  {
-    id: 2,
-    icon: FaGraduationCap,
-    school: "P.P.M. Hr. Sec School",
-    date: "2002",
-    grade: "3 GPA",
-    degree: "Computer Science",
-  },
 ];
 
 export const projects = [
