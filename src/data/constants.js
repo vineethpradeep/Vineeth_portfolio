@@ -2,6 +2,7 @@ import { FaReact } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAdobexd,
+  SiMongoose,
   SiPostman,
   SiRedux,
 } from "react-icons/si";
@@ -57,6 +58,21 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
+        name: "HTML",
+        color: "#f06529",
+        icon: FaHtml5,
+      },
+      {
+        name: "CSS",
+        color: "#264de4",
+        icon: SiCss3,
+      },
+      {
+        name: "JavaScript",
+        color: "#f7df1e",
+        icon: SiJavascript,
+      },
+      {
         name: "React Js",
         color: "rgb(0, 255, 255)",
         icon: FaReact,
@@ -72,29 +88,9 @@ export const skills = [
         icon: SiNextdotjs,
       },
       {
-        name: "JavaScript",
-        color: "#f7df1e",
-        icon: SiJavascript,
-      },
-      {
-        name: "HTML",
-        color: "#f06529",
-        icon: FaHtml5,
-      },
-      {
-        name: "CSS",
-        color: "#264de4",
-        icon: SiCss3,
-      },
-      {
-        name: "Styled Components",
-        color: "#b4468b",
-        icon: SiStyledcomponents,
-      },
-      {
-        name: "Tailwind",
-        color: "#38bdf9",
-        icon: RiTailwindCssFill,
+        name: "Angular",
+        color: "#da2f35",
+        icon: FaAngular,
       },
       {
         name: "Bootstrap",
@@ -107,9 +103,14 @@ export const skills = [
         icon: "materialUi",
       },
       {
-        name: "Angular",
-        color: "#da2f35",
-        icon: FaAngular,
+        name: "Styled Components",
+        color: "#b4468b",
+        icon: SiStyledcomponents,
+      },
+      {
+        name: "Tailwind",
+        color: "#38bdf9",
+        icon: RiTailwindCssFill,
       },
     ],
   },
@@ -137,6 +138,11 @@ export const skills = [
         icon: SiMongodb,
       },
       {
+        name: "mongoose",
+        color: "#880000",
+        icon: SiMongoose,
+      },
+      {
         name: "Firebase",
         color: "#fcca3f",
         icon: SiFirebase,
@@ -161,17 +167,6 @@ export const skills = [
         color: "#000000",
         icon: FaGithub,
       },
-
-      {
-        name: "Netlify",
-        color: "#23c0ba",
-        icon: SiNetlify,
-      },
-      {
-        name: "Vercel",
-        color: "#000000",
-        icon: SiVercel,
-      },
       {
         name: "Postman",
         color: "#ff6c37",
@@ -191,6 +186,16 @@ export const skills = [
         name: "Azure DevOps",
         color: "#2172b6",
         icon: SiAzuredevops,
+      },
+      {
+        name: "Netlify",
+        color: "#23c0ba",
+        icon: SiNetlify,
+      },
+      {
+        name: "Vercel",
+        color: "#000000",
+        icon: SiVercel,
       },
       {
         name: "Adobe Photoshop",
