@@ -41,7 +41,7 @@ const School = styled.div`
   letter-spacing: -0.5px;
   color: #2e353e;
   margin-bottom: 5px;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 600;
 `;
 
@@ -50,7 +50,7 @@ const Degree = styled.div`
   color: #2e353e;
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.4em;
 `;
 
 const Date = styled.div`
@@ -89,8 +89,8 @@ export default function Education() {
               <Icon>
                 <education.icon />
               </Icon>
-              <School>{education.school}</School>
               <Degree>{education.degree}</Degree>
+              <School>{education.school}</School>
               <Group>
                 <Date>{education.date}</Date>
                 <Grade>{education.grade}</Grade>
