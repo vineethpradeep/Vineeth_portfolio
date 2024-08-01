@@ -1,8 +1,10 @@
-import { FaReact } from "react-icons/fa";
+import { FaPython, FaReact } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAdobexd,
+  SiMicrosoftsharepoint,
   SiMongoose,
+  SiMysql,
   SiPostman,
   SiRedux,
 } from "react-icons/si";
@@ -33,6 +35,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 import { SlSocialSkype } from "react-icons/sl";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export const bio = {
   name: "Vineeth Pradeep",
@@ -41,6 +44,7 @@ export const bio = {
     "Application Developer",
     "UI Developer",
     "MERN Stack Developer",
+    "Full Stack Developer",
     "UI / UX Designer",
   ],
   description:
@@ -119,6 +123,11 @@ export const skills = [
     title: "Backend",
     skills: [
       {
+        name: "Python",
+        color: "#3b77a7",
+        icon: FaPython,
+      },
+      {
         name: "Node Js",
         color: "#5fa04f",
         icon: FaNodeJs,
@@ -142,6 +151,16 @@ export const skills = [
         name: "mongoose",
         color: "#880000",
         icon: SiMongoose,
+      },
+      {
+        name: "Mysql",
+        color: "#036087",
+        icon: SiMysql,
+      },
+      {
+        name: "Postgresql",
+        color: "#31648c",
+        icon: BiLogoPostgresql,
       },
       {
         name: "Firebase",
@@ -187,6 +206,11 @@ export const skills = [
         name: "Azure DevOps",
         color: "#2172b6",
         icon: SiAzuredevops,
+      },
+      {
+        name: "Sharepoint",
+        color: "#04767c",
+        icon: SiMicrosoftsharepoint,
       },
       {
         name: "Netlify",
