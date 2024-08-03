@@ -88,14 +88,14 @@ export const skills = [
         icon: SiNextdotjs,
       },
       {
-        name: "Redux",
-        color: "#00a7e5",
-        icon: SiRedux,
-      },
-      {
         name: "Angular",
         color: "#da2f35",
         icon: FaAngular,
+      },
+      {
+        name: "Redux",
+        color: "#00a7e5",
+        icon: SiRedux,
       },
       {
         name: "Bootstrap",
@@ -123,6 +123,11 @@ export const skills = [
     title: "Backend",
     skills: [
       {
+        name: "Python",
+        color: "#3b77a7",
+        icon: FaPython,
+      },
+      {
         name: "Node Js",
         color: "#5fa04f",
         icon: FaNodeJs,
@@ -133,24 +138,9 @@ export const skills = [
         icon: SiExpress,
       },
       {
-        name: "Python",
-        color: "#3b77a7",
-        icon: FaPython,
-      },
-      {
         name: "Graph Ql",
         color: "#f6009c",
         icon: GrGraphQl,
-      },
-      {
-        name: "MongoDB",
-        color: "#599636",
-        icon: SiMongodb,
-      },
-      {
-        name: "mongoose",
-        color: "#880000",
-        icon: SiMongoose,
       },
       {
         name: "Mysql",
@@ -161,6 +151,16 @@ export const skills = [
         name: "Postgresql",
         color: "#31648c",
         icon: BiLogoPostgresql,
+      },
+      {
+        name: "MongoDB",
+        color: "#599636",
+        icon: SiMongodb,
+      },
+      {
+        name: "mongoose",
+        color: "#880000",
+        icon: SiMongoose,
       },
       {
         name: "Firebase",
@@ -188,9 +188,9 @@ export const skills = [
         icon: FaGithub,
       },
       {
-        name: "Postman",
-        color: "#ff6c37",
-        icon: SiPostman,
+        name: "Sharepoint",
+        color: "#04767c",
+        icon: SiMicrosoftsharepoint,
       },
       {
         name: "AWS Cloud",
@@ -198,19 +198,19 @@ export const skills = [
         icon: FaAws,
       },
       {
-        name: "Jira",
-        color: "#1868db",
-        icon: SiJira,
-      },
-      {
         name: "Azure DevOps",
         color: "#2172b6",
         icon: SiAzuredevops,
       },
       {
-        name: "Sharepoint",
-        color: "#04767c",
-        icon: SiMicrosoftsharepoint,
+        name: "Jira",
+        color: "#1868db",
+        icon: SiJira,
+      },
+      {
+        name: "Postman",
+        color: "#ff6c37",
+        icon: SiPostman,
       },
       {
         name: "Netlify",
