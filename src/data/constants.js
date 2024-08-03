@@ -123,11 +123,6 @@ export const skills = [
     title: "Backend",
     skills: [
       {
-        name: "Python",
-        color: "#3b77a7",
-        icon: FaPython,
-      },
-      {
         name: "Node Js",
         color: "#5fa04f",
         icon: FaNodeJs,
@@ -136,6 +131,11 @@ export const skills = [
         name: "Express Js",
         color: "#494949",
         icon: SiExpress,
+      },
+      {
+        name: "Python",
+        color: "#3b77a7",
+        icon: FaPython,
       },
       {
         name: "Graph Ql",
