@@ -204,7 +204,7 @@ export default function Header() {
                 />
               </span>
             </Splfont>
-            <p>Swansea, UK</p>
+            <p>United Kingdom</p>
             <p>Information Technology and Service</p>
             <LinkText>
               <strong>Professional : </strong>Frontend Developer{" "}
