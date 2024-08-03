@@ -83,14 +83,14 @@ export const skills = [
         icon: FaReact,
       },
       {
-        name: "Redux",
-        color: "#00a7e5",
-        icon: SiRedux,
-      },
-      {
         name: "Next Js",
         color: "#000000",
         icon: SiNextdotjs,
+      },
+      {
+        name: "Redux",
+        color: "#00a7e5",
+        icon: SiRedux,
       },
       {
         name: "Angular",
