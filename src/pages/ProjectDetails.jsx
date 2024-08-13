@@ -107,7 +107,6 @@ const Button = styled.a`
     background-color: ${(props) => (props.secondary ? "#ededed" : "#ffc700")};
   }
 `;
-
 const ProjectDetails = ({ selectedProject }) => {
   return (
     <Container>
@@ -122,9 +121,17 @@ const ProjectDetails = ({ selectedProject }) => {
         <Desc>{selectedProject?.description}</Desc>
         {selectedProject.category === "webApp" && (
           <ButtonGroup>
-            <Button secondary={true} href={selectedProject.github} target="new">
-              View Code
-            </Button>
+            {selectedProject.github === "" ? (
+              ""
+            ) : (
+              <Button
+                secondary={true}
+                href={selectedProject.github}
+                target="new"
+              >
+                View Code
+              </Button>
+            )}
             <Button target="new" href={selectedProject.webapp}>
               View Live App
             </Button>

@@ -8,10 +8,25 @@ const StyledHeader = styled.div`
   position: relative;
   width: 100%;
   height: 500px;
-  background-image: url("contact-bg.jpg");
+  background-image: url("cover-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 0.1)
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
   @media (max-width: 660px) {
     height: 850px;
   }
@@ -27,7 +42,7 @@ const HeaderContent = styled.div`
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   gap: 2rem;
   width: 65%;

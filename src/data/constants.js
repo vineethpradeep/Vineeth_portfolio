@@ -354,6 +354,27 @@ export const projects = [
     projects: [
       {
         projectId: 0,
+        title: "Eisken Properties",
+        description:
+          "Eisken Properties is a dynamic real estate platform developed as a personal learning project, inspired by a local house letting agency in Swansea. The project aims to simulate a real-world property management system where users can explore, add, and interact with property listings. It features secure Google Auth integration for user authentication, property management capabilities, bookmarking options, and a messaging system that enables direct communication between users and property owners within the app. Additionally, it supports geo-location with Mapbox and image management through Cloudinary. The project leverages modern technologies, including Next.js, React.js, Node.js, MongoDB, and Tailwind CSS, to deliver a robust and user-friendly experience. Future enhancements include the addition of advanced search filters based on property criteria, implementation of user roles such as admin and property manager, expansion of the messaging system to include real-time chat, and enhancements to the UI/UX with additional animations and transitions, ensuring a more engaging and efficient user experience.",
+        image: "/portfolio_7.png",
+        tags: [
+          "Next JS",
+          "React Js",
+          "Next Navigation",
+          "Next Auth / google",
+          "Mongodb",
+          "Mongoose",
+          "Mapbox",
+          "Cloudinary",
+          "Tailwind",
+        ],
+        category: "webApp",
+        github: "",
+        webapp: "https://eisken-properties.vercel.app",
+      },
+      {
+        projectId: 1,
         title: "Pizzahud",
         description:
           "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
@@ -370,7 +391,7 @@ export const projects = [
         webapp: "https://pizzahud.netlify.app",
       },
       {
-        projectId: 1,
+        projectId: 2,
         title: "RhythmInn",
         description:
           "RhythmInn is a hotel booking management system that streamlines hotel operations, including user accommodation, breakfast management, cabin reservations, check-in, and checkout. The system uses React Hook Form's form management and validation to increase user input. The frontend uses React.js for a dynamic, responsive UI, while the styled components are modular and reusable. The Context API handles remote and UI states, while Supabase provides real-time backend services. PostgreSQL is the primary database for strong, scalable application data. This combination of technologies makes RhythmInn a robust, efficient, and scalable hotel management tool. Its fast booking system, extensive dashboard, and robust backend help administrators provide outstanding service and boost company success. To access the app, please use the following credentials: Username**: welcome@rhythmInn.com Password**: Password123",
@@ -388,7 +409,7 @@ export const projects = [
         webapp: "https://rhythminn.netlify.app/login",
       },
       {
-        projectId: 2,
+        projectId: 3,
         title: "CodeBox",
         description:
           "CodeBox app so that people could take fun, engaging tests online that tested their React JS skills. Constructed using ReactJS, the app provides users with a dynamic and demanding experience with timed quizzes and real-time progress monitoring. With real-time feedback and the ability to adapt for both right and wrong responses, the scoring system promotes growth and development. The backend is powered by a proprietary JSON API server, which makes it easy to manage and create quiz questions for different courses. My expertise in backend programming and ReactJS is on full display in this project, as is my knack for creating user-focused apps packed with real-time functionality.",
@@ -399,7 +420,7 @@ export const projects = [
         webapp: "https://codeboxquiz.netlify.app/",
       },
       {
-        projectId: 3,
+        projectId: 4,
         title: "Trenteez",
         description:
           "The Trenteez Project is an endeavour of a business that focuses on the creation and production of unique graphic designs for T-shirts. An online customisation tool is being developed as part of the project and is expected to play a key role in future upgrades. This project prioritises responsive design to guarantee smooth user experiences across all platforms. It was built using JavaScript, HTML, CSS, and CSS animations. Future enhanced development will come with users and customers being able to choose and personalise T-shirt designs online, pay for their purchases via an integrated gateway, and have their orders confirmed and delivered. My skills in front-end programming and making dynamic, user-friendly web apps are on display in this project.",
