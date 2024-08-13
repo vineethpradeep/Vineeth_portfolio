@@ -18,7 +18,7 @@ const Nav = styled.nav`
   position: fixed;
   top: 8.2%;
   left: 10%;
-  z-index: 2;
+  z-index: 99999;
   box-shadow: 0px 0px 80px 0px rgba(62, 62, 62, 0.3);
   @media (max-width: 660px) {
     position: absolute;
