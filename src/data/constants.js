@@ -364,7 +364,6 @@ export const projects = [
           "Next Navigation",
           "Next Auth / Google OAuth 2.0",
           "Mongodb",
-          "Mongoose",
           "Mapbox",
           "Cloudinary",
           "Tailwind",
