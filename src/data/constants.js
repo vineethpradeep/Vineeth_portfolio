@@ -362,7 +362,7 @@ export const projects = [
           "Next JS",
           "React Js",
           "Next Navigation",
-          "Next Auth / google",
+          "Next Auth / Google OAuth 2.0",
           "Mongodb",
           "Mongoose",
           "Mapbox",
