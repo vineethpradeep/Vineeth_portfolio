@@ -34,7 +34,7 @@ const ToggleParagraph = ({ children }) => {
   return (
     <Container>
       <Text ref={contentRef} expanded={expanded}>
-        <p>{children}</p>
+        <p style={{ hyphens: "inherit" }}>{children}</p>
       </Text>
       <Button onClick={toggleExpand}>
         {expanded ? "Show Less" : "Show More"}
