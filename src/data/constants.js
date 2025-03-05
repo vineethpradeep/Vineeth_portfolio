@@ -36,6 +36,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { SlSocialSkype } from "react-icons/sl";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { RiAiGenerate } from "react-icons/ri";
 
 export const bio = {
   name: "Vineeth Pradeep",
@@ -44,7 +45,8 @@ export const bio = {
     "Application Developer",
     "UI Developer",
     "MERN Stack Developer",
-    "Full Stack Developer",
+    "MEAN Stack Developer",
+    "Mobile App Developer",
     "UI / UX Designer",
   ],
   description:
@@ -79,6 +81,11 @@ export const skills = [
       },
       {
         name: "React Js",
+        color: "rgb(0, 255, 255)",
+        icon: FaReact,
+      },
+      {
+        name: "React Native",
         color: "rgb(0, 255, 255)",
         icon: FaReact,
       },
@@ -186,6 +193,11 @@ export const skills = [
         name: "GitHub",
         color: "#000000",
         icon: FaGithub,
+      },
+      {
+        name: "Generative AI",
+        color: "#12a37f",
+        icon: RiAiGenerate,
       },
       {
         name: "Sharepoint",
@@ -370,7 +382,7 @@ export const projects = [
         ],
         category: "webApp",
         github: "",
-        webapp: "https://eisken-properties.vercel.app",
+        webapp: "https://eiskenproperties.vercel.app/",
       },
       {
         projectId: 1,
@@ -428,6 +440,17 @@ export const projects = [
         category: "webApp",
         github: "https://github.com/vineethpradeep/trenteez",
         webapp: "https://trenteez.vercel.app",
+      },
+      {
+        projectId: 5,
+        title: "ThaughtWalks",
+        description:
+          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
+        image: "/portfolio_8.png",
+        tags: ["Angular", "Responsive design"],
+        category: "webApp",
+        github: "https://github.com/vineethpradeep/thoughtwalks",
+        webapp: "https://thoughtwalks.netlify.app/",
       },
     ],
   },

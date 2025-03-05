@@ -21,31 +21,34 @@ export default function About() {
       <Wrapper>
         <Title>About Me</Title>
         <ToggleParagraph>
-          I am a highly-motivated and adaptable person who is always looking for
-          new challenges. Thanks to my insatiable need for knowledge, I am
-          committed to providing excellent service. Being optimistic and having
-          a development mentality have prepared me to make a significant impact
-          and accomplish remarkable things. With over a decade of expertise in
-          web front-end and user interface development, my passion and expertise
-          are valuable additions to every project I take on. My experience in
-          the IT industry has expanded from my early days of studying frontend
-          technology. The breadth and depth of my skill set allow me to design
-          and develop online applications that not only meet but exceed user
-          expectations in terms of responsiveness, aesthetics, and power. Along
-          with my technical expertise, I have dedicated a great deal of effort
-          to honing my visual design skills. I am able to create interfaces that
-          are both pleasing and functional. I am passionate about front-end
-          programming because I need to constantly push myself. Researching and
-          reading up on current trends and best practices in my sector allows me
-          to keep my work fresh while still meeting or surpassing expectations.
-          An focus on originality is inherent in my work. I am quite proud of my
-          ability to consistently come up with innovative solutions to
-          challenging problems and of the excellent quality of my work, both of
-          which consistently surpass client expectations. Whether I'm part of a
-          team or working alone, my enthusiasm, dedication, and meticulousness
-          always provide excellent results. I am an accomplished front-end
-          developer that is eager to meet with you to talk about the possibility
-          of contributing to your next project.
+          I am a freelance product designer and full-stack developer
+          specializing in cutting-edge technology and the development of full
+          web and mobile applications. With expertise in business product
+          structure, user experience (UX), user interface (UI) design, and
+          development, I transform ideas into powerful digital solutions. I
+          leverage modern technologies, including generative AI, cloud
+          computing, and responsive frameworks, to build innovative,
+          high-performance applications that seamlessly run on both desktop and
+          mobile platforms. With over a decade of experience in web front-end
+          and UI development, I bring a passion for design and technology to
+          every project. My journey in the IT industry began with frontend
+          development, gradually expanding to full-stack development, allowing
+          me to create applications that are not only visually stunning but also
+          highly responsive, scalable, and user-centric. Beyond my technical
+          expertise, I have dedicated years to refining my visual design skills,
+          ensuring that the interfaces I build are both aesthetically engaging
+          and functionally seamless. I thrive on continuous learning and
+          innovation, always staying ahead of emerging technologies and industry
+          best practices. My problem-solving mindset and dedication to
+          excellence allow me to develop creative solutions that exceed client
+          expectations. Whether working independently or as part of a team, my
+          enthusiasm, meticulous attention to detail, and commitment to quality
+          ensure outstanding results. I am a highly motivated and adaptable
+          professional who embraces new challenges and opportunities. My
+          optimistic outlook and growth-oriented mindset enable me to make a
+          meaningful impact on every project I take on. If you’re looking for a
+          skilled full web and mobile app designer and developer, I’d love to
+          discuss how I can contribute to your next project.
         </ToggleParagraph>
       </Wrapper>
     </StyledElement>

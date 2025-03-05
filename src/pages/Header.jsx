@@ -21,8 +21,8 @@ const StyledHeader = styled.div`
     height: 100%;
     background: linear-gradient(
       to bottom right,
-      rgba(0, 0, 0, 0.5),
-      rgba(255, 255, 255, 0.1)
+      rgb(16, 8, 41),
+      rgba(16, 8, 41, 0.6)
     );
     z-index: 1;
     pointer-events: none;
