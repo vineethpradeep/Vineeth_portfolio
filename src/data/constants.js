@@ -42,6 +42,8 @@ export const bio = {
   name: "Vineeth Pradeep",
   roles: [
     "UI / UX Designer",
+    "Product Designer",
+    "Generative AI UI / UX Designer",
     "UI / UX Developer",
     "Frontend Developer",
     "Application Developer",
