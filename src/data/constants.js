@@ -262,7 +262,18 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 0,
+    id: 1,
+    role: "Freelance Web Developer",
+    company: "Freelance, Uk, Swansea",
+    date: "Jul 2024 - Present",
+    desc: [
+      "A real estate platform designed to simplify property management and enhance the user experience. The platform integrates Google Authentication for secure login, property listing and management, geo-location services using Mapbox, and image processing for high-quality property visuals. Built with Next.js, React.js, Node.js, and MongoDB, the platform is optimized for performance, scalability, and seamless user interaction.",
+      "A hotel booking system that streamlines real-time reservations and manages guest data efficiently. It features dynamic dashboards, secure form validation, and real-time analytics. Built with React.js, Supabase, and PostgreSQL, the system offers a smooth and responsive user experience for both customers and hotel administrators",
+      "A responsive web platform built to connect mentors and students, offering an easy-to-use interface for enrollment and learning management. Developed with Angular, the platform allows students to find mentors, schedule sessions, and track progress",
+    ],
+  },
+  {
+    id: 2,
     role: "Senior Application Developer",
     company: "IBM India Private Limited, India",
     date: "Aug 2022 - Oct 2023",
@@ -273,7 +284,7 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     role: "Tech Lead – UI Developer",
     company: "HCL Technologies, India",
     date: "May 2020 - Aug 2022",
@@ -286,7 +297,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     role: "Senior Analyst – UI Developer",
     company: "Apptium Technology India Pvt. Ltd, India",
     date: "Mar 2018 - Jan 2020",
@@ -298,7 +309,7 @@ export const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     role: "Business Associate",
     company: "Crown Solution India Pvt Ltd, India",
     date: "Jun 2017 - Nov 2017",
@@ -309,7 +320,7 @@ export const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     role: "Software Web Designer",
     company: "DUCEN IT Pvt Ltd, India",
     date: "Oct 2013 - Jun 2017",
@@ -322,7 +333,7 @@ export const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     role: "System Administrator",
     company: "Narayanaguru College of Engineering, India",
     date: "Nov 2007 - May 2010",
