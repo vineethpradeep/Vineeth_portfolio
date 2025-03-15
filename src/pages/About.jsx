@@ -29,17 +29,26 @@ export default function About() {
           <br />
           Leveraging modern technologies like generative AI, cloud computing,
           and responsive frameworks, I create high-performance applications that
-          run seamlessly across desktop and mobile platforms. With over a decade
-          of experience in front-end and UI development, my journey began in
-          frontend engineering and evolved into full-stack development, allowing
-          me to build scalable, user-centric applications. <br />
+          run seamlessly across desktop and mobile platforms. My deep
+          understanding of front-end and UI development spans over a decade,
+          starting with frontend engineering and evolving into full-stack
+          development, enabling me to build scalable, user-centric applications.
           <br />
-          Beyond technical expertise, I have honed my visual design skills to
+          <br />
+          My technical expertise includes mocking contexts in different screen
+          standards, such as standard writing mode, screen reader mode, and view
+          mode. I excel in handling viewport suits for layout design and custom
+          viewports, ensuring optimal rendering and visual representation. I
+          possess in-depth knowledge of the DOM and CSSOM, including parsing and
+          painting concepts. Additionally, I am proficient in integrating
+          third-party module parsing libraries and frameworks to enhance
+          functionality and performance.
+          <br />
+          <br />
+          Beyond technical proficiency, I have honed my visual design skills to
           craft aesthetically engaging and functionally seamless interfaces.
           Passionate about innovation, I stay ahead of emerging technologies and
-          industry best practices, ensuring every project exceeds expectations.{" "}
-          <br />
-          <br />
+          industry best practices, ensuring every project exceeds expectations.
           Whether working independently or collaboratively, I bring meticulous
           attention to detail, adaptability, and a commitment to quality. If
           you’re looking for a skilled web and mobile app designer and

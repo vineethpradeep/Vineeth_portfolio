@@ -443,17 +443,17 @@ export const projects = [
         github: "https://github.com/vineethpradeep/codebox",
         webapp: "https://codeboxquiz.netlify.app/",
       },
-      {
-        projectId: 4,
-        title: "Trenteez",
-        description:
-          "The Trenteez Project is an endeavour of a business that focuses on the creation and production of unique graphic designs for T-shirts. An online customisation tool is being developed as part of the project and is expected to play a key role in future upgrades. This project prioritises responsive design to guarantee smooth user experiences across all platforms. It was built using JavaScript, HTML, CSS, and CSS animations. Future enhanced development will come with users and customers being able to choose and personalise T-shirt designs online, pay for their purchases via an integrated gateway, and have their orders confirmed and delivered. My skills in front-end programming and making dynamic, user-friendly web apps are on display in this project.",
-        image: "/portfolio_4.png",
-        tags: ["JavaScript", "SVG icons", "CSS Animation", "Responsive design"],
-        category: "webApp",
-        github: "https://github.com/vineethpradeep/trenteez",
-        webapp: "https://trenteez.vercel.app",
-      },
+      // {
+      //   projectId: 4,
+      //   title: "Trenteez",
+      //   description:
+      //     "The Trenteez Project is an endeavour of a business that focuses on the creation and production of unique graphic designs for T-shirts. An online customisation tool is being developed as part of the project and is expected to play a key role in future upgrades. This project prioritises responsive design to guarantee smooth user experiences across all platforms. It was built using JavaScript, HTML, CSS, and CSS animations. Future enhanced development will come with users and customers being able to choose and personalise T-shirt designs online, pay for their purchases via an integrated gateway, and have their orders confirmed and delivered. My skills in front-end programming and making dynamic, user-friendly web apps are on display in this project.",
+      //   image: "/portfolio_4.png",
+      //   tags: ["JavaScript", "SVG icons", "CSS Animation", "Responsive design"],
+      //   category: "webApp",
+      //   github: "https://github.com/vineethpradeep/trenteez",
+      //   webapp: "https://trenteez.vercel.app",
+      // },
       {
         projectId: 5,
         title: "ThaughtWalks",
