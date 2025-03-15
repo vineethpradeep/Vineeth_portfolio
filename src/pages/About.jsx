@@ -36,13 +36,14 @@ export default function About() {
           <br />
           <br />
           My technical expertise includes mocking contexts in different screen
-          standards, such as standard writing mode, screen reader mode, and view
-          mode. I excel in handling viewport suits for layout design and custom
+          standards, such as layout flow writing mode, screen reader, and view.
+          I excel in handling viewport suits for layout design and custom
           viewports, ensuring optimal rendering and visual representation. I
-          possess in-depth knowledge of the DOM and CSSOM, including parsing and
-          painting concepts. Additionally, I am proficient in integrating
-          third-party module parsing libraries and frameworks to enhance
-          functionality and performance.
+          possess in-depth knowledge of the DOM and CSSOM, including parsing,
+          scripting, rendering concepts for different screen engines, and
+          painting. Additionally, I am proficient in integrating third-party
+          module parsing libraries and frameworks to enhance functionality and
+          performance.
           <br />
           <br />
           Beyond technical proficiency, I have honed my visual design skills to
