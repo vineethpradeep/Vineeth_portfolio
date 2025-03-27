@@ -395,7 +395,7 @@ export const projects = [
         ],
         category: "webApp",
         github: "",
-        webapp: "https://eiskenproperties.vercel.app/",
+        webappUrl: "https://eiskenproperties.vercel.app/",
       },
       {
         projectId: 1,
@@ -412,10 +412,28 @@ export const projects = [
         ],
         category: "webApp",
         github: "https://github.com/vineethpradeep/pizzahud",
-        webapp: "https://pizzahud.netlify.app",
+        webappUrl: "https://pizzahud.netlify.app",
       },
       {
         projectId: 2,
+        title: "Service Booking App",
+        description:
+          "This service booking app allows users in the UK to find and book appointments for various services they need. The platform connects customers with verified and qualified service providers, ensuring a trustworthy hiring experience. Service providers can manage their workflow based on priority, track tasks from start to finish, process payments, and receive customer reviews upon completion. The app supports both B2B (business-to-business) and B2C (business-to-customer) interactions and includes employee management features. The app is developed using a microservices architecture and follows a hybrid app approach for cross-platform compatibility.",
+        image: "/portfolio_9.png",
+        tags: [
+          "React Native",
+          "Microservices",
+          "Hybrid App",
+          "Cross-Platform",
+          "Redux",
+          "Firebase",
+        ],
+        category: "webApp",
+        github: "",
+        webappUrl: "",
+      },
+      {
+        projectId: 3,
         title: "RhythmInn",
         description:
           "RhythmInn is a hotel booking management system that streamlines hotel operations, including user accommodation, breakfast management, cabin reservations, check-in, and checkout. The system uses React Hook Form's form management and validation to increase user input. The frontend uses React.js for a dynamic, responsive UI, while the styled components are modular and reusable. The Context API handles remote and UI states, while Supabase provides real-time backend services. PostgreSQL is the primary database for strong, scalable application data. This combination of technologies makes RhythmInn a robust, efficient, and scalable hotel management tool. Its fast booking system, extensive dashboard, and robust backend help administrators provide outstanding service and boost company success. To access the app, please use the following credentials: Username**: welcome@rhythmInn.com Password**: Password123",
@@ -430,10 +448,10 @@ export const projects = [
         ],
         category: "webApp",
         github: "https://github.com/vineethpradeep/rhythminn",
-        webapp: "https://rhythminn.netlify.app/login",
+        webappUrl: "https://rhythminn.netlify.app/login",
       },
       {
-        projectId: 3,
+        projectId: 4,
         title: "CodeBox",
         description:
           "CodeBox app so that people could take fun, engaging tests online that tested their React JS skills. Constructed using ReactJS, the app provides users with a dynamic and demanding experience with timed quizzes and real-time progress monitoring. With real-time feedback and the ability to adapt for both right and wrong responses, the scoring system promotes growth and development. The backend is powered by a proprietary JSON API server, which makes it easy to manage and create quiz questions for different courses. My expertise in backend programming and ReactJS is on full display in this project, as is my knack for creating user-focused apps packed with real-time functionality.",
@@ -441,7 +459,7 @@ export const projects = [
         tags: ["React Js", "Redux", "JSON Server", "Github", "Context Api"],
         category: "webApp",
         github: "https://github.com/vineethpradeep/codebox",
-        webapp: "https://codeboxquiz.netlify.app/",
+        webappUrl: "https://codeboxquiz.netlify.app/",
       },
       // {
       //   projectId: 4,
@@ -452,7 +470,7 @@ export const projects = [
       //   tags: ["JavaScript", "SVG icons", "CSS Animation", "Responsive design"],
       //   category: "webApp",
       //   github: "https://github.com/vineethpradeep/trenteez",
-      //   webapp: "https://trenteez.vercel.app",
+      //   webappUrl: "https://trenteez.vercel.app",
       // },
       {
         projectId: 5,
@@ -463,7 +481,7 @@ export const projects = [
         tags: ["Angular", "Responsive design"],
         category: "webApp",
         github: "https://github.com/vineethpradeep/thoughtwalks",
-        webapp: "https://thoughtwalks.netlify.app/",
+        webappUrl: "https://thoughtwalks.netlify.app/",
       },
     ],
   },
@@ -480,7 +498,7 @@ export const projects = [
         tags: ["Photoshop 7"],
         category: "graphicDesign",
         github: "#",
-        webapp: "#",
+        webappUrl: "#",
       },
       {
         projectId: 1,
@@ -491,7 +509,7 @@ export const projects = [
         tags: ["Illustrator", "Coreldraw", "Photoshop"],
         category: "graphicDesign",
         github: "#",
-        webapp: "#",
+        webappUrl: "#",
       },
     ],
   },

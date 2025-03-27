@@ -98,14 +98,20 @@ const Button = styled.a`
   color: #000;
   padding: 12px 16px;
   border-radius: 8px;
-  background-color: ${(props) => (props.secondary ? "#fff" : "#fbd44c")};
-  cursor: pointer;
+  background-color: ${(props) =>
+    props.disabled ? "#ccc" : props.secondary ? "#fff" : "#fbd44c"};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   text-decoration: none;
   transition: all 0.5s ease;
-  border: 1px solid ${(props) => (props.secondary ? "#d3cece" : "#fbd44c")};
+  border: 1px solid
+    ${(props) =>
+      props.disabled ? "#aaa" : props.secondary ? "#d3cece" : "#fbd44c"};
+
   &:hover {
-    background-color: ${(props) => (props.secondary ? "#ededed" : "#ffc700")};
+    background-color: ${(props) =>
+      props.disabled ? "#ccc" : props.secondary ? "#ededed" : "#ffc700"};
   }
+  pointer-events: ${(props) => (props.disabled ? "none" : "auto")};
 `;
 const ProjectDetails = ({ selectedProject }) => {
   return (
@@ -132,8 +138,18 @@ const ProjectDetails = ({ selectedProject }) => {
                 View Code
               </Button>
             )}
-            <Button target="new" href={selectedProject.webapp}>
-              View Live App
+            <Button
+              target="new"
+              href={`${
+                selectedProject.webappUrl === ""
+                  ? "#"
+                  : selectedProject.webappUrl
+              }`}
+              disabled={selectedProject.webappUrl === ""}
+            >
+              {selectedProject.webappUrl === ""
+                ? "Under Development"
+                : "View Demo"}
             </Button>
           </ButtonGroup>
         )}
