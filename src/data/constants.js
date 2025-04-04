@@ -37,6 +37,7 @@ import { SlSocialSkype } from "react-icons/sl";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiAiGenerate } from "react-icons/ri";
+import { FaWordpressSimple } from "react-icons/fa";
 
 export const bio = {
   name: "Vineeth Pradeep",
@@ -106,6 +107,7 @@ export const skills = [
         color: "#00a7e5",
         icon: SiRedux,
       },
+      { name: "Wordpress", color: "#2172b6", icon: FaWordpressSimple },
       {
         name: "Bootstrap",
         color: "#533b78",
