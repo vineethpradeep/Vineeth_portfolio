@@ -44,7 +44,7 @@ export const bio = {
   roles: [
     "UI / UX Designer",
     "Product Designer",
-    "Generative AI UI / UX Designer",
+    "Gen AI UI / UX Designer",
     "UI / UX Developer",
     "Frontend Developer",
     "Application Developer",
