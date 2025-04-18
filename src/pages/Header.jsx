@@ -222,7 +222,7 @@ export default function Header() {
             <p>United Kingdom</p>
             <p>Information Technology and Service</p>
             <LinkText>
-              <strong>Professional : </strong>Frontend Developer{" "}
+              <strong>Professional : </strong>Full-stack Developer{" "}
               <Link
                 activeClass="active"
                 to="experience"
