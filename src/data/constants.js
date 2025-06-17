@@ -38,16 +38,19 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiAiGenerate } from "react-icons/ri";
 import { FaWordpressSimple } from "react-icons/fa";
+import { SiPhp } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa";
 
 export const bio = {
   name: "Vineeth Pradeep",
   roles: [
     "UI / UX Designer",
     "Product Designer",
-    "Gen AI UI / UX Designer",
-    "UI / UX Developer",
+    "Web Developer",
     "Frontend Developer",
     "Application Developer",
+    "Full Stack Developer",
+    "Gen AI UI / UX Designer",
     "MERN Stack Developer",
     "MEAN Stack Developer",
     "Mobile App Developer",
@@ -137,6 +140,16 @@ export const skills = [
         name: "Python",
         color: "#3b77a7",
         icon: FaPython,
+      },
+      {
+        name: "Php",
+        color: "#8993be",
+        icon: SiPhp,
+      },
+      {
+        name: "Laravel",
+        color: "#fb503b",
+        icon: FaLaravel,
       },
       {
         name: "Node Js",
@@ -269,7 +282,7 @@ export const experiences = [
     company: "Freelance, Uk, Swansea",
     date: "Jul 2024 - Present",
     desc: [
-      "A real estate platform designed to simplify property management and enhance the user experience. The platform integrates Google Authentication for secure login, property listing and management, geo-location services using Mapbox, and image processing for high-quality property visuals. Built with Next.js, React.js, Node.js, and MongoDB, the platform is optimized for performance, scalability, and seamless user interaction.",
+      "A real estate platform designed to simplify property management and enhance the user experience. Developed with PHP Laravel, it features integrated mailing services, PostgreSQL for robust data management, and role-based access control (admin, agent, and user) to support business growth and marketing insights. Key functionalities include Google Authentication for secure login, property listing and management, geo-location via Mapbox, and high-quality image processing for property visuals. The platform emphasizes scalability, performance, and seamless user interaction.",
       "A hotel booking system that streamlines real-time reservations and manages guest data efficiently. It features dynamic dashboards, secure form validation, and real-time analytics. Built with React.js, Supabase, and PostgreSQL, the system offers a smooth and responsive user experience for both customers and hotel administrators",
       "A responsive web platform built to connect mentors and students, offering an easy-to-use interface for enrollment and learning management. Developed with Angular, the platform allows students to find mentors, schedule sessions, and track progress",
     ],
@@ -383,38 +396,23 @@ export const projects = [
         projectId: 0,
         title: "Eisken Properties",
         description:
-          "Eisken Properties is a dynamic real estate platform developed as a personal learning project, inspired by a local house letting agency in Swansea. The project aims to simulate a real-world property management system where users can explore, add, and interact with property listings. It features secure Google Auth integration for user authentication, property management capabilities, bookmarking options, and a messaging system that enables direct communication between users and property owners within the app. Additionally, it supports geo-location with Mapbox and image management through Cloudinary. The project leverages modern technologies, including Next.js, React.js, Node.js, MongoDB, and Tailwind CSS, to deliver a robust and user-friendly experience. Future enhancements include the addition of advanced search filters based on property criteria, implementation of user roles such as admin and property manager, expansion of the messaging system to include real-time chat, and enhancements to the UI/UX with additional animations and transitions, ensuring a more engaging and efficient user experience.",
-        image: "/portfolio_7.png",
-        tags: [
-          "Next JS",
-          "React Js",
-          "Next Navigation",
-          "Next Auth / Google OAuth 2.0",
-          "Mongodb",
-          "Mapbox",
-          "Cloudinary",
-          "Tailwind",
-        ],
+          "Eisken Properties is a dynamic real estate platform developed using PHP Laravel as a personal learning project, inspired by a local house letting agency in Swansea. The application simulates a real-world property management system where users can explore, add, and interact with property listings. It features secure role-based access control, including property agent, user, and admin roles, designed to support business data growth and dashboard-driven marketing services. The platform delivers a robust and user-friendly experience. Planned enhancements include advanced search filters based on property criteria, a real-time messaging system, and UI/UX improvements with added animations and transitions to provide a more engaging and efficient user experience.",
+        image: "/portfolio_10.png",
+        tags: ["PHP", "Laravel", "PostgreSQL"],
         category: "webApp",
         github: "",
-        webappUrl: "https://eiskenproperties.vercel.app/",
+        webappUrl: "https://eisken-properties-app-md9lv.ondigitalocean.app/",
       },
       {
         projectId: 1,
-        title: "Pizzahud",
+        title: "Eisken Properties admin",
         description:
-          "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
-        image: "/portfolio_1.png",
-        tags: [
-          "React Js",
-          "Redux Toolkit",
-          "React Router",
-          "Tailwind",
-          "Eslint",
-        ],
+          "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business data. It includes tools for handling booking and contact requests, supports data-driven decision-making through integrated analytics, and features a mailing service for communication based on user interactions and scheduled appointments.",
+        image: "/portfolio_11.png",
+        tags: ["PHP", "Laravel", "PostgreSQL"],
         category: "webApp",
-        github: "https://github.com/vineethpradeep/pizzahud",
-        webappUrl: "https://pizzahud.netlify.app",
+        github: "",
+        webappUrl: "",
       },
       {
         projectId: 2,
@@ -436,6 +434,54 @@ export const projects = [
       },
       {
         projectId: 3,
+        title: "Eisken Properties",
+        description:
+          "Eisken Properties is a dynamic real estate platform developed as a personal learning project, inspired by a local house letting agency in Swansea. The project aims to simulate a real-world property management system where users can explore, add, and interact with property listings. It features secure Google Auth integration for user authentication, property management capabilities, bookmarking options, and a messaging system that enables direct communication between users and property owners within the app. Additionally, it supports geo-location with Mapbox and image management through Cloudinary. The project leverages modern technologies, including Next.js, React.js, Node.js, MongoDB, and Tailwind CSS, to deliver a robust and user-friendly experience. Future enhancements include the addition of advanced search filters based on property criteria, implementation of user roles such as admin and property manager, expansion of the messaging system to include real-time chat, and enhancements to the UI/UX with additional animations and transitions, ensuring a more engaging and efficient user experience.",
+        image: "/portfolio_7.png",
+        tags: [
+          "Next JS",
+          "React Js",
+          "Next Navigation",
+          "Next Auth / Google OAuth 2.0",
+          "Mongodb",
+          "Mapbox",
+          "Cloudinary",
+          "Tailwind",
+        ],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://eiskenproperties.vercel.app/",
+      },
+      {
+        projectId: 4,
+        title: "Pizzahud",
+        description:
+          "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
+        image: "/portfolio_1.png",
+        tags: [
+          "React Js",
+          "Redux Toolkit",
+          "React Router",
+          "Tailwind",
+          "Eslint",
+        ],
+        category: "webApp",
+        github: "https://github.com/vineethpradeep/pizzahud",
+        webappUrl: "https://pizzahud.netlify.app",
+      },
+      {
+        projectId: 7,
+        title: "ThaughtWalks",
+        description:
+          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
+        image: "/portfolio_8.png",
+        tags: ["Angular", "Responsive design"],
+        category: "webApp",
+        github: "https://github.com/vineethpradeep/thoughtwalks",
+        webappUrl: "https://thoughtwalks.netlify.app/",
+      },
+      {
+        projectId: 5,
         title: "RhythmInn",
         description:
           "RhythmInn is a hotel booking management system that streamlines hotel operations, including user accommodation, breakfast management, cabin reservations, check-in, and checkout. The system uses React Hook Form's form management and validation to increase user input. The frontend uses React.js for a dynamic, responsive UI, while the styled components are modular and reusable. The Context API handles remote and UI states, while Supabase provides real-time backend services. PostgreSQL is the primary database for strong, scalable application data. This combination of technologies makes RhythmInn a robust, efficient, and scalable hotel management tool. Its fast booking system, extensive dashboard, and robust backend help administrators provide outstanding service and boost company success. To access the app, please use the following credentials: Username**: welcome@rhythmInn.com Password**: Password123",
@@ -453,7 +499,7 @@ export const projects = [
         webappUrl: "https://rhythminn.netlify.app/login",
       },
       {
-        projectId: 4,
+        projectId: 6,
         title: "CodeBox",
         description:
           "CodeBox app so that people could take fun, engaging tests online that tested their React JS skills. Constructed using ReactJS, the app provides users with a dynamic and demanding experience with timed quizzes and real-time progress monitoring. With real-time feedback and the ability to adapt for both right and wrong responses, the scoring system promotes growth and development. The backend is powered by a proprietary JSON API server, which makes it easy to manage and create quiz questions for different courses. My expertise in backend programming and ReactJS is on full display in this project, as is my knack for creating user-focused apps packed with real-time functionality.",
@@ -474,17 +520,6 @@ export const projects = [
       //   github: "https://github.com/vineethpradeep/trenteez",
       //   webappUrl: "https://trenteez.vercel.app",
       // },
-      {
-        projectId: 5,
-        title: "ThaughtWalks",
-        description:
-          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
-        image: "/portfolio_8.png",
-        tags: ["Angular", "Responsive design"],
-        category: "webApp",
-        github: "https://github.com/vineethpradeep/thoughtwalks",
-        webappUrl: "https://thoughtwalks.netlify.app/",
-      },
     ],
   },
   {

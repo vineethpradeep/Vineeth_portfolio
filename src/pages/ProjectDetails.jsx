@@ -148,7 +148,7 @@ const ProjectDetails = ({ selectedProject }) => {
               disabled={selectedProject.webappUrl === ""}
             >
               {selectedProject.webappUrl === ""
-                ? "Under Development"
+                ? "Development / Restricted Access Permissions"
                 : "View Demo"}
             </Button>
           </ButtonGroup>
