@@ -40,6 +40,7 @@ import { RiAiGenerate } from "react-icons/ri";
 import { FaWordpressSimple } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
 
 export const bio = {
   name: "Vineeth Pradeep",
@@ -140,6 +141,11 @@ export const skills = [
         name: "Python",
         color: "#3b77a7",
         icon: FaPython,
+      },
+      {
+        name: "Django",
+        color: "#00a7e5",
+        icon: DiDjango,
       },
       {
         name: "Php",
