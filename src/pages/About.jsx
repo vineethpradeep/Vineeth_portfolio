@@ -21,63 +21,69 @@ export default function About() {
       <Wrapper>
         <Title>About Me</Title>
         <ToggleParagraph>
-          I’m a passionate and experienced Product Designer and Full-Stack
-          Developer with over a decade of expertise in building scalable, high
-          performance digital products. My career includes both freelance work
-          and experience with various platform companies, allowing me to deliver
-          end-to-end solutions that combine intuitive user experiences with
-          robust, future ready architecture. This diverse background has honed
-          my ability to meet business needs while setting new standards for
-          quality.
+          I am a passionate and experienced Product Designer and Full-Stack
+          Developer with over a decade of expertise in building scalable,
+          high-performance digital products. My career spans freelance projects
+          and platform companies, allowing me to deliver end-to-end solutions
+          that blend intuitive user experiences with robust, future-ready
+          architecture. This diverse background has honed my ability to meet
+          complex business needs while driving innovation and setting new
+          quality standards.
           <br />
           <br />
-          Leveraging modern technologies like generative AI, cloud computing,
-          and responsive frameworks, I create high-performance applications that
-          run seamlessly across desktop and mobile platforms. My deep
-          understanding of front-end and UI development spans over a decade,
-          starting with frontend engineering and evolving into full-stack
-          development, enabling me to build scalable, user-centric applications.
+          Leveraging modern technologies such as generative AI, cloud computing,
+          and responsive frameworks, I create high-performance applications
+          optimized for seamless operation across desktop and mobile platforms.
+          My expertise in front-end and UI development has evolved over the past
+          decade into full-stack mastery, enabling me to build scalable,
+          user-centric applications.
           <br />
           <br />
-          My technical expertise includes mocking contexts in different screen
-          standards, such as layout flow writing mode, screen reader, and view.
-          I excel in handling viewport suits for layout design and custom
-          viewports, ensuring optimal rendering and visual representation. I
-          possess in-depth knowledge parsing, scripting, rendering concepts for
-          different screen engines, and painting. Additionally, I am proficient
-          in integrating third-party module parsing libraries and frameworks to
-          enhance functionality and performance.
+          Technically, I specialize in Python and Django for backend development
+          and PHP with Laravel for web application frameworks. My skills include
+          mocking contexts for various screen standards, ensuring optimal
+          rendering and accessibility across devices. I am proficient in
+          parsing, scripting, rendering, and integrating third-party libraries
+          to enhance application performance and functionality.
           <br />
           <br />
-          I specialise in designing and developing web and mobile applications
-          using technologies like React.js, Next.js, Angular, Node.js, and
-          Python. I focus on creating seamless API integrations, realtime
-          interfaces, and component driven architectures that scale with
-          business needs. From responsive web apps to native mobile solutions, I
-          ensure each product is high performing and user friendly. My expertise
-          extends to cloud native solutions and SaaS architecture. I help
-          businesses build subscription based applications that are scalable and
-          reliable. Using Docker, Kubernetes, and CI/CD pipelines, I
-          containerise and deploy services in the cloud, ensuring fault tolerant
-          and scalable environments. I have experience architecting multi tenant
-          systems and orchestrating micro services for flexible, high
-          performance deployments. I excel at bridging design thinking with
-          technical execution, building responsive, accessible UIs that adapt to
-          various devices. I integrate and customise CMS platforms like
-          WordPress, Drupal, and headless CMS to support complex workflows in
-          marketing, sales, and customer engagement. My architectural approach
-          optimises performance, focusing on low latency communication between
+          I design and develop web and mobile applications using React.js,
+          Next.js, Angular, Node.js, Python/Django, and PHP/Laravel. My focus is
+          on seamless API integrations, real-time interfaces, and
+          component-driven architectures that scale with evolving business
+          needs. From responsive web apps to native mobile solutions, I
+          prioritize high performance and user-friendly experiences.
+          <br />
+          <br />
+          My expertise also extends to cloud-native SaaS architecture, where I
+          build scalable subscription-based applications using Docker,
+          Kubernetes, and CI/CD pipelines to deploy fault-tolerant services. I
+          have experience architecting multi-tenant systems and orchestrating
+          microservices for flexible, high-performance deployments. Beyond
+          <br />
+          <br />I bridge design thinking with technical execution to create
+          responsive, accessible UIs adaptable to diverse devices. I integrate
+          and customize CMS platforms such as WordPress, Drupal, and headless
+          CMS solutions to support complex workflows across marketing, sales,
+          and customer engagement. My architectural approach emphasizes
+          performance optimization and low-latency communication between
           frontend and backend services.
           <br />
           <br />
-          Beyond technical proficiency, I have honed my visual design skills to
-          craft aesthetically engaging and functionally seamless interfaces.
-          Passionate about innovation, I stay ahead of emerging technologies and
-          industry best practices, ensuring every project exceeds expectations.
-          Whether working independently or collaboratively, I bring meticulous
-          attention to detail, adaptability, and a commitment to quality. If
-          you’re looking for a skilled web and mobile app designer and
-          developer, let’s discuss how I can contribute to your next project.
+          Beyond technical expertise, I have honed my visual design skills to
+          craft aesthetically compelling and functionally seamless interfaces.
+          Passionate about innovation, I continuously stay updated on emerging
+          technologies and industry best practices to ensure that every project
+          exceeds expectations. Whether working independently or
+          collaboratively, I bring meticulous attention to detail, adaptability,
+          and a strong commitment to quality.
+          <br />
+          <br />
+          <em>
+            If you’re looking for a skilled web and mobile app designer and
+            developer, let’s connect—I’d love to discuss how I can contribute to
+            your next project.
+          </em>
         </ToggleParagraph>
       </Wrapper>
     </StyledElement>
