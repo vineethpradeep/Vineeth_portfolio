@@ -488,21 +488,15 @@ export const projects = [
       },
       {
         projectId: 5,
-        title: "RhythmInn",
+        title: "Coimbatore Sparks Rotaract",
         description:
-          "RhythmInn is a hotel booking management system that streamlines hotel operations, including user accommodation, breakfast management, cabin reservations, check-in, and checkout. The system uses React Hook Form's form management and validation to increase user input. The frontend uses React.js for a dynamic, responsive UI, while the styled components are modular and reusable. The Context API handles remote and UI states, while Supabase provides real-time backend services. PostgreSQL is the primary database for strong, scalable application data. This combination of technologies makes RhythmInn a robust, efficient, and scalable hotel management tool. Its fast booking system, extensive dashboard, and robust backend help administrators provide outstanding service and boost company success. To access the app, please use the following credentials: Username**: welcome@rhythmInn.com Password**: Password123",
-        image: "/portfolio_2.png",
-        tags: [
-          "React Js",
-          "React Query",
-          "Styled Components",
-          "React Router",
-          "Recharts",
-          "Supabase",
-        ],
+          "This website is the official online presence of the Rotaract Club of Coimbatore Sparks, Tamil Nadu. Fully developed using Angular, it offers a modern, responsive design that works seamlessly across all devices. Currently in active development, the site aims to empower the community by providing up-to-date information, event details, and resources for members and visitors alike.",
+        image: "/portfolio_12.png",
+        tags: ["Angular", "Responsive design"],
         category: "webApp",
-        github: "https://github.com/vineethpradeep/rhythminn",
-        webappUrl: "https://rhythminn.netlify.app/login",
+        github:
+          "https://github.com/vineethpradeep/coimbatore-sparks-rotaract.git",
+        webappUrl: "https://coimbatoresparksrotaract.netlify.app/",
       },
       {
         projectId: 6,
