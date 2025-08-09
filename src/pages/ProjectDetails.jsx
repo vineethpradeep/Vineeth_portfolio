@@ -149,7 +149,7 @@ const ProjectDetails = ({ selectedProject }) => {
             >
               {selectedProject.webappUrl === ""
                 ? "Development / Restricted Access Permissions"
-                : "View Demo"}
+                : "View Live"}
             </Button>
           </ButtonGroup>
         )}

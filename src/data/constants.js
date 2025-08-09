@@ -402,18 +402,18 @@ export const projects = [
         projectId: 0,
         title: "Eisken Properties",
         description:
-          "Eisken Properties is a dynamic real estate platform developed using PHP Laravel as a personal learning project, inspired by a local house letting agency in Swansea. The application simulates a real-world property management system where users can explore, add, and interact with property listings. It features secure role-based access control, including property agent, user, and admin roles, designed to support business data growth and dashboard-driven marketing services. The platform delivers a robust and user-friendly experience. Planned enhancements include advanced search filters based on property criteria, a real-time messaging system, and UI/UX improvements with added animations and transitions to provide a more engaging and efficient user experience.",
+          "Eisken Properties is a dynamic real estate platform developed using PHP Laravel with PostgreSQL for data management, and a mail service to support customer communications. The application was built for and used live by a local house letting agency in Swansea, serving as a real world property management system where users can explore, add, and interact with property listings. It features secure role based access control, including property agent, user, and admin roles, designed to support business data growth and dashboard driven marketing services. The UI is fully responsive, optimized for Business day-to-day Customer interactions, ensuring seamless access from any device. The platform delivered a robust and user friendly experience. Planned enhancements include advanced search filters based on property criteria, a real-time messaging system, and UI/UX improvements with added animations and transitions to provide a more engaging and efficient user experience.",
         image: "/portfolio_10.png",
         tags: ["PHP", "Laravel", "PostgreSQL"],
         category: "webApp",
         github: "",
-        webappUrl: "https://eisken-properties-app-md9lv.ondigitalocean.app/",
+        webappUrl: "https://www.eiskenproperties.com",
       },
       {
         projectId: 1,
         title: "Eisken Properties admin",
         description:
-          "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business data. It includes tools for handling booking and contact requests, supports data-driven decision-making through integrated analytics, and features a mailing service for communication based on user interactions and scheduled appointments.",
+          "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business performance. It includes tools for handling booking and contact requests, supports data driven decision making through integrated analytics, and incorporates a built-in mailing service for communication triggered by user interactions and scheduled appointments.",
         image: "/portfolio_11.png",
         tags: ["PHP", "Laravel", "PostgreSQL"],
         category: "webApp",
@@ -476,17 +476,6 @@ export const projects = [
         webappUrl: "https://pizzahud.netlify.app",
       },
       {
-        projectId: 7,
-        title: "ThaughtWalks",
-        description:
-          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
-        image: "/portfolio_8.png",
-        tags: ["Angular", "Responsive design"],
-        category: "webApp",
-        github: "https://github.com/vineethpradeep/thoughtwalks",
-        webappUrl: "https://thoughtwalks.netlify.app/",
-      },
-      {
         projectId: 5,
         title: "Coimbatore Sparks Rotaract",
         description:
@@ -497,6 +486,17 @@ export const projects = [
         github:
           "https://github.com/vineethpradeep/coimbatore-sparks-rotaract.git",
         webappUrl: "https://coimbatoresparksrotaract.netlify.app/",
+      },
+      {
+        projectId: 7,
+        title: "ThaughtWalks",
+        description:
+          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
+        image: "/portfolio_8.png",
+        tags: ["Angular", "Responsive design"],
+        category: "webApp",
+        github: "https://github.com/vineethpradeep/thoughtwalks",
+        webappUrl: "https://thoughtwalks.netlify.app/",
       },
       {
         projectId: 6,
@@ -544,6 +544,17 @@ export const projects = [
           "I have worked on various graphic design projects focusing on branding elements such as logos, business cards, posters and business marketing designs. My creative work spans across different software including Adobe Photoshop, Illustrator and CorelDRAW, where I have developed visually compelling and professionally crafted designs. These projects allowed me to showcase my skills in creating cohesive brand identities and my ability to effectively use advanced design tools and techniques. From conceptualization to execution, each project reflects my attention to detail and commitment to delivering high-quality design solutions.",
         image: "/portfolio_6.png",
         tags: ["Illustrator", "Coreldraw", "Photoshop"],
+        category: "graphicDesign",
+        github: "#",
+        webappUrl: "#",
+      },
+      {
+        projectId: 1,
+        title: "Marketing Materials",
+        description:
+          "Marketing Materials project showcases my expertise in creating visually appealing and effective marketing collateral. I have designed a variety of materials including brochures, flyers, posters, and social media graphics. Each piece is crafted to align with the brand's identity and messaging, utilizing tools such as Adobe Photoshop, Illustrator, and InDesign. My designs are not only aesthetically pleasing but also strategically developed to engage the target audience and drive marketing objectives.",
+        image: "/portfolio_13.png",
+        tags: ["Figma", "Photoshop CC"],
         category: "graphicDesign",
         github: "#",
         webappUrl: "#",
