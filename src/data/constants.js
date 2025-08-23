@@ -460,6 +460,17 @@ export const projects = [
       },
       {
         projectId: 4,
+        title: "Intelliforger",
+        description:
+          "This website is the official online presence of Intelligent, a project built using React and Next.js. Designed with a modern, responsive interface, it delivers seamless performance across all devices. Intelligent empowers businesses by offering cutting-edge AI and RPA solutions that optimize operations, enhance customer experiences, and drive innovation. Currently under active development, the platform continues to evolve with the goal of transforming organizations through intelligent automation and advanced artificial intelligence capabilities.",
+        image: "/portfolio_14.png",
+        tags: ["Next JS", "React", "Responsive design"],
+        category: "webApp",
+        github: "https://github.com/vineethpradeep/intelliforge.git",
+        webappUrl: "https://intelliforgerltd.netlify.app/",
+      },
+      {
+        projectId: 5,
         title: "Pizzahud",
         description:
           "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
@@ -476,7 +487,7 @@ export const projects = [
         webappUrl: "https://pizzahud.netlify.app",
       },
       {
-        projectId: 5,
+        projectId: 6,
         title: "Coimbatore Sparks Rotaract",
         description:
           "This website is the official online presence of the Rotaract Club of Coimbatore Sparks, Tamil Nadu. Fully developed using Angular, it offers a modern, responsive design that works seamlessly across all devices. Currently in active development, the site aims to empower the community by providing up-to-date information, event details, and resources for members and visitors alike.",
@@ -499,7 +510,7 @@ export const projects = [
         webappUrl: "https://thoughtwalks.netlify.app/",
       },
       {
-        projectId: 6,
+        projectId: 8,
         title: "CodeBox",
         description:
           "CodeBox app so that people could take fun, engaging tests online that tested their React JS skills. Constructed using ReactJS, the app provides users with a dynamic and demanding experience with timed quizzes and real-time progress monitoring. With real-time feedback and the ability to adapt for both right and wrong responses, the scoring system promotes growth and development. The backend is powered by a proprietary JSON API server, which makes it easy to manage and create quiz questions for different courses. My expertise in backend programming and ReactJS is on full display in this project, as is my knack for creating user-focused apps packed with real-time functionality.",
