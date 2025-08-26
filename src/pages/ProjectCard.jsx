@@ -1,8 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ModalWindow from "../ui/ModalWindow";
 import ProjectDetails from "./ProjectDetails";
 
+const pulse = keyframes`
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+`;
+
 const Card = styled.div`
+  position: relative;
   width: 330px;
   height: 430px;
   background-color: #fff;
@@ -27,6 +34,30 @@ const Image = styled.img`
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+`;
+
+const LiveBadge = styled.div`
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    animation: ${pulse} 1.2s infinite ease-in-out;
+  }
 `;
 
 const Tags = styled.div`
@@ -78,7 +109,6 @@ const Description = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;
-
 const ProjectCards = ({ selectedProjects }) => {
   return (
     <>
@@ -86,6 +116,7 @@ const ProjectCards = ({ selectedProjects }) => {
         <ModalWindow>
           <ModalWindow.Open opens="viewProfile" project={project}>
             <Card key={project.projectId}>
+              {project.live && <LiveBadge>LIVE</LiveBadge>}
               <Image src={project.image} />
               <Tags>
                 {project.tags?.map((tag, index) => (

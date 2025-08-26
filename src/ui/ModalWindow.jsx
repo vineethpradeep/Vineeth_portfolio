@@ -1,8 +1,38 @@
 import { cloneElement, createContext, useContext, useState } from "react";
 import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useOutsideClick } from "../hooks/useOutsideClick";
+
+const pulse = keyframes`
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+`;
+
+const LiveBadge = styled.div`
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    animation: ${pulse} 1.2s infinite ease-in-out;
+  }
+`;
 
 const StyledModal = styled.div`
   position: fixed;
@@ -102,6 +132,7 @@ function Window({ children, name }) {
         <Button onClick={close}>
           <HiXMark />
         </Button>
+        {selectedProject?.live && <LiveBadge>LIVE</LiveBadge>}
         {cloneElement(children, { selectedProject })}
       </StyledModal>
     </Overlay>,

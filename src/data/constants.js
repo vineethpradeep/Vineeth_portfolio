@@ -408,17 +408,19 @@ export const projects = [
         category: "webApp",
         github: "",
         webappUrl: "https://www.eiskenproperties.com",
+        live: true,
       },
       {
         projectId: 1,
-        title: "Eisken Properties admin",
+        title: "Dotseek",
         description:
-          "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business performance. It includes tools for handling booking and contact requests, supports data driven decision making through integrated analytics, and incorporates a built-in mailing service for communication triggered by user interactions and scheduled appointments.",
-        image: "/portfolio_11.png",
-        tags: ["PHP", "Laravel", "PostgreSQL"],
+          "DotSeek is an innovative IT solutions company specializing in building scalable web and mobile applications. The platform is currently under development and leverages modern technologies including Next.js and React to deliver high-performance, responsive, and secure applications. Designed with scalability in mind, DotSeek’s solutions focus on supporting business growth, digital transformation, and seamless user experiences across devices. Planned enhancements include advanced API integrations, cloud-native deployment strategies, and enhanced UI/UX with interactive components to ensure clients receive cutting-edge, future-ready applications. DotSeek embodies a vision of delivering robust, flexible, and user-focused technology solutions tailored for evolving business needs.",
+        image: "/portfolio_16.png",
+        tags: ["Next.js", "React", "Responsive design"],
         category: "webApp",
         github: "",
-        webappUrl: "",
+        webappUrl: "https://www.dotseek.co.uk/",
+        live: true,
       },
       {
         projectId: 2,
@@ -437,6 +439,7 @@ export const projects = [
         category: "webApp",
         github: "",
         webappUrl: "",
+        live: false,
       },
       {
         projectId: 3,
@@ -455,6 +458,19 @@ export const projects = [
         category: "webApp",
         github: "https://github.com/vineethpradeep/mubarakhotel.git",
         webappUrl: "https://www.mubarakhotels.com/",
+        live: true,
+      },
+      {
+        projectId: 4,
+        title: "Eisken Properties admin",
+        description:
+          "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business performance. It includes tools for handling booking and contact requests, supports data driven decision making through integrated analytics, and incorporates a built-in mailing service for communication triggered by user interactions and scheduled appointments.",
+        image: "/portfolio_11.png",
+        tags: ["PHP", "Laravel", "PostgreSQL"],
+        category: "webApp",
+        github: "",
+        webappUrl: "",
+        live: true,
       },
       {
         projectId: 4,
@@ -466,6 +482,7 @@ export const projects = [
         category: "webApp",
         github: "https://github.com/vineethpradeep/intelliforge.git",
         webappUrl: "https://intelliforgerltd.netlify.app/",
+        live: false,
       },
       {
         projectId: 5,
@@ -483,6 +500,7 @@ export const projects = [
         category: "webApp",
         github: "https://github.com/vineethpradeep/pizzahud",
         webappUrl: "https://pizzahud.netlify.app",
+        live: false,
       },
       {
         projectId: 6,
@@ -495,6 +513,7 @@ export const projects = [
         github:
           "https://github.com/vineethpradeep/coimbatore-sparks-rotaract.git",
         webappUrl: "https://coimbatoresparksrotaract.netlify.app/",
+        live: false,
       },
       {
         projectId: 7,
@@ -506,6 +525,7 @@ export const projects = [
         category: "webApp",
         github: "https://github.com/vineethpradeep/thoughtwalks",
         webappUrl: "https://thoughtwalks.netlify.app/",
+        live: false,
       },
       {
         projectId: 8,
@@ -517,6 +537,7 @@ export const projects = [
         category: "webApp",
         github: "https://github.com/vineethpradeep/codebox",
         webappUrl: "https://codeboxquiz.netlify.app/",
+        live: false,
       },
       {
         projectId: 9,
@@ -537,6 +558,7 @@ export const projects = [
         category: "webApp",
         github: "",
         webappUrl: "https://eiskenproperties.vercel.app/",
+        live: false,
       },
       // {
       //   projectId: 4,
@@ -565,6 +587,7 @@ export const projects = [
         category: "graphicDesign",
         github: "#",
         webappUrl: "#",
+        live: false,
       },
       {
         projectId: 1,
@@ -576,6 +599,7 @@ export const projects = [
         category: "graphicDesign",
         github: "#",
         webappUrl: "#",
+        live: false,
       },
       {
         projectId: 1,
@@ -587,6 +611,7 @@ export const projects = [
         category: "graphicDesign",
         github: "#",
         webappUrl: "#",
+        live: false,
       },
     ],
   },
