@@ -462,6 +462,18 @@ export const projects = [
       },
       {
         projectId: 4,
+        title: "ThoughtWalks",
+        description:
+          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
+        image: "/portfolio_8.png",
+        tags: ["Angular", "Responsive design"],
+        category: "webApp",
+        github: "https://github.com/vineethpradeep/thoughtwalks",
+        webappUrl: "https://thoughtwalks.netlify.app/",
+        live: true,
+      },
+      {
+        projectId: 5,
         title: "Eisken Properties admin",
         description:
           "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business performance. It includes tools for handling booking and contact requests, supports data driven decision making through integrated analytics, and incorporates a built-in mailing service for communication triggered by user interactions and scheduled appointments.",
@@ -473,7 +485,7 @@ export const projects = [
         live: true,
       },
       {
-        projectId: 4,
+        projectId: 6,
         title: "Intelliforger",
         description:
           "This website is the official online presence of Intelligent, a project built using React and Next.js. Designed with a modern, responsive interface, it delivers seamless performance across all devices. Intelligent empowers businesses by offering cutting-edge AI and RPA solutions that optimize operations, enhance customer experiences, and drive innovation. Currently under active development, the platform continues to evolve with the goal of transforming organizations through intelligent automation and advanced artificial intelligence capabilities.",
@@ -485,7 +497,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 5,
+        projectId: 7,
         title: "Pizzahud",
         description:
           "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
@@ -503,7 +515,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 6,
+        projectId: 8,
         title: "Coimbatore Sparks Rotaract",
         description:
           "This website is the official online presence of the Rotaract Club of Coimbatore Sparks, Tamil Nadu. Fully developed using Angular, it offers a modern, responsive design that works seamlessly across all devices. Currently in active development, the site aims to empower the community by providing up-to-date information, event details, and resources for members and visitors alike.",
@@ -516,19 +528,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 7,
-        title: "ThaughtWalks",
-        description:
-          "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
-        image: "/portfolio_8.png",
-        tags: ["Angular", "Responsive design"],
-        category: "webApp",
-        github: "https://github.com/vineethpradeep/thoughtwalks",
-        webappUrl: "https://thoughtwalks.netlify.app/",
-        live: false,
-      },
-      {
-        projectId: 8,
+        projectId: 9,
         title: "CodeBox",
         description:
           "CodeBox app so that people could take fun, engaging tests online that tested their React JS skills. Constructed using ReactJS, the app provides users with a dynamic and demanding experience with timed quizzes and real-time progress monitoring. With real-time feedback and the ability to adapt for both right and wrong responses, the scoring system promotes growth and development. The backend is powered by a proprietary JSON API server, which makes it easy to manage and create quiz questions for different courses. My expertise in backend programming and ReactJS is on full display in this project, as is my knack for creating user-focused apps packed with real-time functionality.",
@@ -540,7 +540,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 9,
+        projectId: 10,
         title: "Eisken Properties",
         description:
           "Eisken Properties is a dynamic real estate platform developed as a personal learning project, inspired by a local house letting agency in Swansea. The project aims to simulate a real-world property management system where users can explore, add, and interact with property listings. It features secure Google Auth integration for user authentication, property management capabilities, bookmarking options, and a messaging system that enables direct communication between users and property owners within the app. Additionally, it supports geo-location with Mapbox and image management through Cloudinary. The project leverages modern technologies, including Next.js, React.js, Node.js, MongoDB, and Tailwind CSS, to deliver a robust and user-friendly experience. Future enhancements include the addition of advanced search filters based on property criteria, implementation of user roles such as admin and property manager, expansion of the messaging system to include real-time chat, and enhancements to the UI/UX with additional animations and transitions, ensuring a more engaging and efficient user experience.",
