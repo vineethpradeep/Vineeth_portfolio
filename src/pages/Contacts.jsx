@@ -1,8 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import styled from "styled-components";
 import { Title } from "../ui/Heading";
 import { contactInfo } from "../data/constants";
 import ContactComponents from "./ContactComponents";
 import { Element } from "react-scroll";
+import Swal from "sweetalert2";
 
 const Container = styled.section`
   display: flex;
@@ -14,9 +18,6 @@ const Container = styled.section`
 const ContactsWrapper = styled.div`
   display: flex;
   width: 100%;
-  @media (max-width: 660px) {
-    display: block;
-  }
   @media (max-width: 768px) {
     display: block;
   }
@@ -29,10 +30,6 @@ const ContactformContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 20px;
-  @media (max-width: 660px) {
-    width: 100%;
-    justify-content: center;
-  }
   @media (max-width: 768px) {
     width: 100%;
     justify-content: center;
@@ -43,9 +40,6 @@ const ContactlinkContainer = styled.div`
   width: 50%;
   background: url("contact-bg-1.jpg") 0% 0% / cover;
   padding: 20px;
-  @media (max-width: 660px) {
-    width: 100%;
-  }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -57,9 +51,6 @@ const FormContact = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 660px) {
-    width: 100%;
-  }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -95,7 +86,6 @@ const Input = styled.input`
   font-size: 14px;
   padding: 6px 0;
   margin-bottom: 15px;
-  box-shadow: none;
   width: 100%;
 `;
 
@@ -107,7 +97,6 @@ const Textarea = styled.textarea`
   font-size: 14px;
   padding: 6px 0;
   margin-bottom: 15px;
-  box-shadow: none;
   height: 100px;
   width: 100%;
 `;
@@ -130,6 +119,55 @@ const StyledElement = styled(Element)`
 `;
 
 export default function Contacts() {
+  const [formData, setFormData] = useState({
+    name: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormData({ name: "", subject: "", message: "" });
+        Swal.fire({
+          icon: "success",
+          title: "Thank you!",
+          text: "Your message has been sent successfully.",
+          confirmButtonColor: "#3085d6",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong. Please try again!",
+        });
+      }
+    } catch (err) {
+      console.error(err);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong. Please try again!",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <StyledElement name="contacts">
       <Container>
@@ -138,16 +176,30 @@ export default function Contacts() {
           <ContactformContainer>
             <FormContact>
               <H2>Reach Me</H2>
-              <Form>
-                <Input placeholder="Your Name*" />
-                <Input placeholder="Subject" />
+              <Form onSubmit={handleSubmit}>
+                <Input
+                  name="name"
+                  placeholder="Your Name*"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <Input
+                  name="subject"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
                 <Textarea
-                  maxlength="5000"
-                  rows="10"
                   name="message"
                   placeholder="Message*"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                 />
-                <Submitbtn>Submit</Submitbtn>
+                <Submitbtn type="submit">
+                  {loading ? "Sending..." : "Submit"}
+                </Submitbtn>
               </Form>
             </FormContact>
           </ContactformContainer>

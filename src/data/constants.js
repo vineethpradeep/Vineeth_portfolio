@@ -422,8 +422,35 @@ export const projects = [
         webappUrl: "https://www.dotseek.co.uk/",
         live: true,
       },
+
       {
         projectId: 2,
+        title: "Edumex",
+        description:
+          "Edumex is a comprehensive educational platform designed to connect students with qualified tutors for personalized learning experiences. Built using React for the frontend and PHP with MySQL for the backend, the platform offers a user-friendly interface that allows students to easily find and book tutoring sessions across various subjects. Key features include secure user authentication, detailed tutor profiles, scheduling and booking functionalities, and a robust review system to ensure quality education. The responsive design ensures accessibility across devices, providing a seamless experience for both students and tutors. Future enhancements include the integration of video conferencing tools, real-time chat support, and advanced analytics to track student progress and tutor performance.",
+        image: "/edumex.png",
+        tags: ["React", "PHP", "MySQL", "SQL", "Responsive design"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://www.edumex.co.uk/",
+        live: true,
+      },
+
+      {
+        projectId: 3,
+        title: "Edumex Kids",
+        description:
+          "Edumex Kids is a specialized extension of the Edumex platform, tailored to provide educational resources and tutoring services specifically for younger students. The platform is designed with child-friendly interfaces and content, ensuring a safe and engaging learning environment. Built using React for the frontend and PHP with MySQL for the backend, Edumex Kids offers features such as interactive lessons, progress tracking, and parental controls. The responsive design guarantees accessibility across various devices, making learning convenient and effective for children. Future plans include the addition of gamified learning modules, enhanced multimedia content, and integration with educational games to foster a fun and productive learning experience.",
+        image: "/edumex-kids.png",
+        tags: ["React", "PHP", "MySQL", "SQL", "Responsive design"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://www.edumex.co.uk/kids/",
+        live: true,
+      },
+
+      {
+        projectId: 4,
         title: "Service Booking App",
         description:
           "This service booking app allows users in the UK to find and book appointments for various services they need. The platform connects customers with verified and qualified service providers, ensuring a trustworthy hiring experience. Service providers can manage their workflow based on priority, track tasks from start to finish, process payments, and receive customer reviews upon completion. The app supports both B2B (business-to-business) and B2C (business-to-customer) interactions and includes employee management features. The app is developed using a microservices architecture and follows a hybrid app approach for cross-platform compatibility.",
@@ -442,7 +469,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 3,
+        projectId: 5,
         title: "Mubarak Restaurant",
         description:
           "Mubarak Family Restaurant is a modern, family-friendly hospitality platform developed using Next.js and React, with global CSS and Google Fonts for styling, and integrated with third-party libraries like Bootstrap, Swiper, and AOS for enhanced user experience. The website was built for live use by the Mubarak Family Restaurant in Marthandam, Kanyakumari, allowing customers to explore the menu, view room and event booking options, and interact with restaurant services online. It features a responsive, multi-device friendly design optimized for seamless browsing on desktop, tablet, and mobile devices. The platform delivers fast page loads, clear navigation, and engaging visuals to provide a robust and user-friendly experience. Planned enhancements include a real-time booking system, dynamic menu updates, customer feedback integration, and advanced SEO optimization for improved discoverability.",
@@ -461,7 +488,7 @@ export const projects = [
         live: true,
       },
       {
-        projectId: 4,
+        projectId: 6,
         title: "ThoughtWalks",
         description:
           "ThoughtWalks is an online SaaS application built using Angular, designed to connect students and mentors for interactive learning. The platform allows users to enroll in courses and create classrooms based on different subjects. Currently, it offers a Full-Stack Development course that focuses on real-time project training, providing students with hands-on experience. Upon completion, learners receive a certification and gain access to job interview preparation resources. With features like live coding sessions, one-on-one mentorship, a capstone project, resume-building support, and lifetime course access, ThoughtWalks aims to equip students with the skills and confidence needed for a successful tech career",
@@ -473,7 +500,19 @@ export const projects = [
         live: true,
       },
       {
-        projectId: 5,
+        projectId: 7,
+        title: "Accommodation Booking",
+        description:
+          "Accommodation Booking web site developed using angular. bank end contains the full admin control of the site. the front end is a simple responsive site with angular material design. the site is currently in development",
+        image: "/portfolio_17.png",
+        tags: ["Angular", "Responsive design", ".NET Core", "SQL Server"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://hostelbookingcom.netlify.app/",
+        live: true,
+      },
+      {
+        projectId: 8,
         title: "Eisken Properties admin",
         description:
           "Eisken Properties Admin Dashboard provides administrators with a centralized interface to monitor user activity, manage property listings, and analyze business performance. It includes tools for handling booking and contact requests, supports data driven decision making through integrated analytics, and incorporates a built-in mailing service for communication triggered by user interactions and scheduled appointments.",
@@ -485,7 +524,7 @@ export const projects = [
         live: true,
       },
       {
-        projectId: 6,
+        projectId: 9,
         title: "Intelliforger",
         description:
           "This website is the official online presence of Intelligent, a project built using React and Next.js. Designed with a modern, responsive interface, it delivers seamless performance across all devices. Intelligent empowers businesses by offering cutting-edge AI and RPA solutions that optimize operations, enhance customer experiences, and drive innovation. Currently under active development, the platform continues to evolve with the goal of transforming organizations through intelligent automation and advanced artificial intelligence capabilities.",
@@ -497,7 +536,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 7,
+        projectId: 10,
         title: "Pizzahud",
         description:
           "PizzaHud, a new online platform, uses the user's name to simplify pizza ordering. Users may effortlessly add or delete from their order list and shopping cart, making ordering flexible and easy. A smooth user experience is achieved using contemporary web technologies. The ReactJs app uses the advanced UI component framework to build a dynamic and responsive interface. The project combines UI Remote State Management with React Router for navigation and routing and UI State Redux for state management. Tailwind CSS, a utility-first CSS framework, styles the app for a clean, consistent, and configurable look. This mix of technologies creates a powerful, scalable, and entertaining online pizza ordering app.",
@@ -515,7 +554,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 8,
+        projectId: 11,
         title: "Coimbatore Sparks Rotaract",
         description:
           "This website is the official online presence of the Rotaract Club of Coimbatore Sparks, Tamil Nadu. Fully developed using Angular, it offers a modern, responsive design that works seamlessly across all devices. Currently in active development, the site aims to empower the community by providing up-to-date information, event details, and resources for members and visitors alike.",
@@ -528,7 +567,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 9,
+        projectId: 12,
         title: "CodeBox",
         description:
           "CodeBox app so that people could take fun, engaging tests online that tested their React JS skills. Constructed using ReactJS, the app provides users with a dynamic and demanding experience with timed quizzes and real-time progress monitoring. With real-time feedback and the ability to adapt for both right and wrong responses, the scoring system promotes growth and development. The backend is powered by a proprietary JSON API server, which makes it easy to manage and create quiz questions for different courses. My expertise in backend programming and ReactJS is on full display in this project, as is my knack for creating user-focused apps packed with real-time functionality.",
@@ -540,7 +579,7 @@ export const projects = [
         live: false,
       },
       {
-        projectId: 10,
+        projectId: 13,
         title: "Eisken Properties",
         description:
           "Eisken Properties is a dynamic real estate platform developed as a personal learning project, inspired by a local house letting agency in Swansea. The project aims to simulate a real-world property management system where users can explore, add, and interact with property listings. It features secure Google Auth integration for user authentication, property management capabilities, bookmarking options, and a messaging system that enables direct communication between users and property owners within the app. Additionally, it supports geo-location with Mapbox and image management through Cloudinary. The project leverages modern technologies, including Next.js, React.js, Node.js, MongoDB, and Tailwind CSS, to deliver a robust and user-friendly experience. Future enhancements include the addition of advanced search filters based on property criteria, implementation of user roles such as admin and property manager, expansion of the messaging system to include real-time chat, and enhancements to the UI/UX with additional animations and transitions, ensuring a more engaging and efficient user experience.",

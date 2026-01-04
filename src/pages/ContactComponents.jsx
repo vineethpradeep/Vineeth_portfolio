@@ -19,9 +19,8 @@ const Icon = styled.div`
 `;
 
 const TitleLink = styled.div`
-  font-size: 3rem;
-  line-height: 1;
   font-size: 0.8em;
+  line-height: 1;
   color: #bdbdbd;
 `;
 
@@ -29,9 +28,6 @@ const ContactLink = styled.a`
   font-size: 1.4em;
   color: #fff;
   cursor: pointer;
-  @media (max-width: 660px) {
-    font-size: 1em;
-  }
   @media (max-width: 768px) {
     font-size: 1em;
   }
@@ -46,31 +42,41 @@ const SocialName = styled.div`
   a:first-child {
     padding-left: 0;
   }
-  a:nth-of-type(3) {
-    border-right: 0px solid #52504d;
+  a:last-child {
+    border-right: 0;
   }
 `;
 
 export default function ContactComponents({ info }) {
+  const IconComponent = info.icon;
   const names = Array.isArray(info.name) ? info.name : [info.name];
 
   return (
     <LinkedList>
       <Icon>
-        <info.icon />
+        <IconComponent />
       </Icon>
       <List>
         <TitleLink>{info.title}</TitleLink>
-        {names.length >= 3 ? (
+        {Array.isArray(info.name) ? (
           <SocialName>
             {names.map((nameItem, index) => (
-              <ContactLink href={nameItem.link} target="_blank" key={index}>
+              <ContactLink
+                href={nameItem.link || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
                 {nameItem.mediaName || nameItem}
               </ContactLink>
             ))}
           </SocialName>
         ) : (
-          <ContactLink href={info.link} target="_blank">
+          <ContactLink
+            href={info.link || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {names[0].mediaName || names[0]}
           </ContactLink>
         )}
