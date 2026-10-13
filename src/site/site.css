@@ -1481,8 +1481,8 @@ button:focus-visible .roll::after {
 
 .work-modal-visit {
   align-self: flex-start;
-  margin-top: auto;
-  padding-top: var(--space-2);
+  flex-shrink: 0;
+  margin-top: var(--space-2);
 }
 
 @keyframes modal-in {
