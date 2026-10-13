@@ -399,6 +399,18 @@ export const projects = [
     projectItem: "Web App",
     projects: [
       {
+        projectId: 17,
+        title: "QTHE Accreditation",
+        description:
+          "QTHE Accreditation is an online learning and accreditation platform offering CPD, accredited and regulated qualifications for individuals and organisations. Built with React and Vite, the platform lets learners browse and enrol on courses across categories such as computer science, cybersecurity, data science, business and safety, study at their own pace and earn certificates on completion. It includes Google sign-in, course discovery with category navigation and search, curated sections for popular, new and trending courses, corporate training programmes with quote requests, and an instructor pathway for experts to create and publish accredited courses. The platform supports light and dark themes, a GDPR-friendly cookie consent manager, live chat support and a fully responsive layout for learning on any device.",
+        image: "/portfolio_21.png",
+        tags: ["React", "Vite", "Bootstrap", "Responsive design"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://dev.qthe.co.uk/",
+        live: true,
+      },
+      {
         projectId: 14,
         title: "QTHE MindMath",
         description:
