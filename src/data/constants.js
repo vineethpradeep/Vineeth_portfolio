@@ -399,6 +399,42 @@ export const projects = [
     projectItem: "Web App",
     projects: [
       {
+        projectId: 14,
+        title: "QTHE MindMath",
+        description:
+          "QTHE MindMath is a personalised children's learning platform (QTHE CLP) that helps young learners build strong mathematical foundations through engaging Math and Abacus programs. Built with React and Vite, the platform offers adaptive learning paths that match each child's pace and strengths, with interactive lessons, friendly characters and pressure-free practice that encourages exploration and confidence. It includes secure parent and student accounts, an admin dashboard for managing learners and content, and detailed progress tracking with weekly reports broken down by subject, topic and skill, along with personalised learning plans. The fully responsive design lets children continue learning anywhere, on any device, while giving parents a transparent view of their child's growth in a safe, child-friendly environment.",
+        image: "/portfolio_20.png",
+        tags: ["React", "Vite", "Bootstrap", "Responsive design"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://dev.qthemindmath.com/",
+        live: true,
+      },
+      {
+        projectId: 15,
+        title: "AC Jenkins Travel Services",
+        description:
+          "AC Jenkins Travel Services is a modern website for a long-established independent passenger transport provider in Swansea, offering airport, cruise terminal, train station, event, school and business contract transfers across the UK for 1 to 16 passengers. Built with React and Vite, the site features a guided journey selector that lets customers start a quote enquiry by trip type, clear service pages, fleet and review sections with Trustpilot integration, and quick-contact options including WhatsApp and live chat. It is bilingual (English and Welsh), includes a GDPR-friendly cookie consent manager, and is fully responsive with a bold, high-contrast design focused on converting visitors into bookings.",
+        image: "/portfolio_19.png",
+        tags: ["React", "Vite", "Responsive design", "i18n"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://acjenkins-delta.vercel.app/",
+        live: true,
+      },
+      {
+        projectId: 16,
+        title: "Gerwyn Steele",
+        description:
+          "Gerwyn Steele – Movement and Sound is a website for a Swansea-based yoga instructor, Wing Chun Kung Fu teacher and sound healer. Built with React and Vite, the site showcases yoga, Wing Chun, sound journeys and retreats, with class schedules, pricing for classes, workshops, 1-2-1 sound sessions and Welsh countryside retreats, plus booking and membership calls to action. It features a calm, minimal design with rich imagery and embedded video, bilingual English and Welsh content, a privacy-first cookie consent manager for embedded YouTube media, social media integration and a fully responsive layout for a seamless experience on any device.",
+        image: "/portfolio_18.png",
+        tags: ["React", "Vite", "Responsive design", "i18n"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://gerwynsteele.vercel.app/",
+        live: true,
+      },
+      {
         projectId: 0,
         title: "Eisken Properties",
         description:
