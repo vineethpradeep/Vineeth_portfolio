@@ -344,14 +344,6 @@ export const overviews = [
     text: "A bilingual site with a guided journey selector that turns visitors into quote enquiries for airport, cruise, event and contract travel.",
   },
   {
-    title: "Eisken Properties",
-    sector: "Real estate · Lettings",
-    image: "/work/portfolio_10.jpg",
-    url: "https://www.eiskenproperties.com",
-    vision: "Run a growing letting agency from one system instead of spreadsheets and email.",
-    text: "A live property platform with role-based access for admins, agents and tenants, listings management, maps and automated customer emails.",
-  },
-  {
     title: "Gerwyn Steele",
     sector: "Wellbeing · Small business",
     image: "/work/portfolio_18.jpg",
