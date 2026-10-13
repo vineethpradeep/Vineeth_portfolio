@@ -98,7 +98,7 @@ export default function Projects() {
                     <span style={{ transform: `scaleX(${fill})` }} />
                   </span>
                   <span className="projects-tab-label">
-                    {p.title}
+                    {p.tab || p.title}
                   </span>
                 </button>
               </li>

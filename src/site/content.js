@@ -359,6 +359,15 @@ export const overviews = [
     vision: "Bring yoga, martial arts and sound healing together under one calm, bookable brand.",
     text: "A bilingual home for classes, workshops, retreats and memberships, with one simple journey from discovery to booking.",
   },
+  {
+    title: "Mubarak Family Restaurant",
+    tab: "Mubarak",
+    sector: "Hospitality · Restaurant & hotel",
+    image: "/work/mubarak.jpg",
+    url: "https://www.mubarakhotels.com/",
+    vision: "Help a family restaurant and hotel win table, room and event bookings online.",
+    text: "A fast Next.js site with the halal menu, table booking, rooms, events and click-to-call reservations.",
+  },
 ];
 
 export const navLinks = [

@@ -1967,7 +1967,9 @@ button:focus-visible .roll::after {
 .projects-tabs {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* One column per project in the walkthrough. */
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
   gap: var(--space-3);
 }
 
