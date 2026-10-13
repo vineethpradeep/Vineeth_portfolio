@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {
+      "source": "/linkedin-banner.png",
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "https://www.linkedin.com" }]
+    }
+  ]
+}
