@@ -30,19 +30,19 @@
     text-transform: none; color: #c8161d; font-size: 1.12em; letter-spacing: 0; }
   .foot { position: absolute; left: 64px; right: 64px; bottom: 50px; display: flex; justify-content: space-between;
     font: 500 16px "JetBrains Mono", monospace; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
-  .frame { position: absolute; right: 64px; top: 150px; width: 440px; border-radius: 8px; overflow: hidden;
-    background: #2b2b2b; border: 1px solid rgba(255,255,255,0.25); transform: rotate(4deg);
+  .frame { position: absolute; right: 118px; top: 276px; width: 400px; border-radius: 8px; overflow: hidden;
+    background: #2b2b2b; border: 1px solid rgba(255,255,255,0.25); transform: rotate(-3deg);
     box-shadow: 0 40px 80px -30px rgba(0,0,0,0.8); }
   .bar { height: 30px; display: flex; align-items: center; gap: 7px; padding: 0 12px; border-bottom: 1px solid rgba(255,255,255,0.2); }
   .bar i { width: 9px; height: 9px; border-radius: 50%; background: #555; }
   .bar span { margin-left: auto; margin-right: auto; padding: 2px 14px; border-radius: 99px; background: #202020;
     font: 12px "JetBrains Mono", monospace; color: rgba(255,255,255,0.6); }
   .frame img { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; }
-  .frame.back { right: 150px; top: 238px; transform: rotate(-6deg); opacity: 0.6; width: 380px; }
+  .frame.back { right: 76px; top: 134px; transform: rotate(4deg); width: 360px; }
   .code { height: 232px; padding: 16px 18px; background: #161616; color: #9be29b;
     font: 13px/1.55 "JetBrains Mono", monospace; white-space: pre; }
   .code b { color: #f2f2f2; font-weight: 500; }
-  .editor { display: flex; height: 292px; background: #161616; font: 14px/1.6 "JetBrains Mono", monospace; }
+  .editor { display: flex; height: 212px; background: #161616; font: 13px/1.5 "JetBrains Mono", monospace; }
   .gutter { padding: 14px 10px 0 14px; color: rgba(255,255,255,0.28); text-align: right; white-space: pre; }
   .src { padding: 14px 16px 0 6px; color: #e8e8e8; white-space: pre; }
   .k { color: #ff6b70; } .f { color: #8fd3ff; } .s { color: #9be29b; } .c { color: rgba(255,255,255,0.4); } .t { color: #ffcf70; }
@@ -60,14 +60,7 @@
   </div>
   <p class="role">Solutions Architect &amp; Full-Stack Developer</p>
   <h1>Business solutions, <em>architected</em> with AI.</h1>
-  <div class="frame back"><div class="bar"><i></i><i></i><i></i><span>lesson-plan.json</span></div><div class="code">{
-  <b>"intent"</b>: "place-value",
-  <b>"steps"</b>: [
-    { "scene": "abacus" },
-    { "scene": "quiz" }
-  ],
-  <b>"validated"</b>: true
-}</div></div>
+  <div class="frame back"><div class="bar"><i></i><i></i><i></i><span>dev.qthemindmath.com</span></div><img src="../public/work/portfolio_20.jpg" /></div>
   <div class="frame"><div class="bar"><i></i><i></i><i></i><span>tutor_agent.py</span></div>
     <div class="editor">
       <div class="gutter">1
@@ -77,8 +70,7 @@
 5
 6
 7
-8
-9</div>
+8</div>
       <div class="src"><span class="k">class</span> <span class="t">TutorAgent</span>:
   <span class="k">async def</span> <span class="f">plan_lesson</span>(self, goal):
     plan = <span class="k">await</span> model.<span class="f">generate</span>(
@@ -86,8 +78,7 @@
     <span class="k">if not</span> rules.<span class="f">validate</span>(plan):
       <span class="k">return</span> fallback.<span class="f">authored</span>(goal)
     <span class="k">return</span> plan  <span class="c"># AI proposes,</span>
-                 <span class="c"># rules decide</span>
-<span class="caret"></span></div>
+                 <span class="c"># rules decide</span><span class="caret"></span></div>
     </div>
     <div class="run"><span>✓</span> plan generated · <span>✓</span> rules passed · lesson ready</div>
   </div>
