@@ -90,6 +90,12 @@ ol {
   outline-offset: 4px;
 }
 
+/* Dialogs take focus themselves on open; only their controls show the focus ring. */
+dialog:focus,
+dialog:focus-visible {
+  outline: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

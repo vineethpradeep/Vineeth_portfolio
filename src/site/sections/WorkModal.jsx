@@ -10,6 +10,8 @@ export default function WorkModal({ item, onClose }) {
     const dialog = ref.current;
     if (item && !dialog.open) {
       dialog.showModal();
+      // Focus the dialog itself so the browser does not auto-focus (and outline) the Close button.
+      dialog.focus();
       lockScroll(true);
     }
     return () => lockScroll(false);
@@ -23,6 +25,7 @@ export default function WorkModal({ item, onClose }) {
     <dialog
       ref={ref}
       className="work-modal"
+      tabIndex={-1}
       data-lenis-prevent
       aria-labelledby="work-modal-title"
       onClose={onClose}

@@ -16,6 +16,8 @@ function CvDialog({ open, onClose }) {
     const dialog = ref.current;
     if (open && !dialog.open) {
       dialog.showModal();
+      // Focus the dialog itself so the browser does not auto-focus (and outline) the Close button.
+      dialog.focus();
       lockScroll(true);
     }
     return () => lockScroll(false);
@@ -27,6 +29,7 @@ function CvDialog({ open, onClose }) {
     <dialog
       ref={ref}
       className="cv"
+      tabIndex={-1}
       data-lenis-prevent
       aria-labelledby="cv-title"
       onClose={onClose}
