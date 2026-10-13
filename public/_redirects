@@ -1,0 +1,2 @@
+# Netlify only: forward every path on vineethjourney.netlify.app to the primary Vercel site.
+/*  https://vineethjourney.vercel.app/:splat  301!
