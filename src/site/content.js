@@ -154,11 +154,11 @@ export const stackGroups = [
   },
   {
     title: "Performance & testing",
-    items: ["Playwright", "Jest", "Cypress", "xUnit", "React Testing Library", "E2E & regression"],
+    items: ["Playwright", "Jest", "Cypress", "xUnit", "React Testing Library", "E2E & regression", "Performance optimisation"],
   },
   {
     title: "Design & collaboration",
-    items: ["Figma", "Adobe Suite", "Jira", "Confluence", "Agile", "Scrum", "Accessibility", "SEO", "Performance"],
+    items: ["Figma", "Adobe Suite", "Jira", "Confluence", "Agile", "Scrum", "Accessibility", "SEO"],
   },
 ];
 

@@ -2566,6 +2566,9 @@ button:focus-visible .roll::after {
 .stack-items {
   display: flex;
   flex-wrap: wrap;
+  /* Keep chips at their own height when the group title wraps and makes the row taller. */
+  align-items: flex-start;
+  align-content: flex-start;
   gap: var(--space-1);
 }
 
