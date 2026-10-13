@@ -162,7 +162,7 @@ export default function Hero() {
           Scroll
         </p>
         <p className="hero-label hero-label-right">
-          {profile.role} · {profile.location}
+          {profile.role}
         </p>
       </div>
     </section>

@@ -60,7 +60,7 @@ export default function Nav() {
         <div className="nav-end">
           <CvButton className="nav-cv" tone="outline" label="CV" />
           <span className="nav-time">
-            Swansea <time>{time}</time>
+            <time>{time}</time>
           </span>
           <button
             ref={toggleRef}

@@ -712,7 +712,6 @@ button:focus-visible .roll::after {
 
 .nav-time time {
   font-variant-numeric: tabular-nums;
-  margin-left: var(--space-1);
 }
 
 .nav-pill {

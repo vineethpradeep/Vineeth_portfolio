@@ -11,8 +11,8 @@ Content lives in `src/site/content.js`; tokens live in `src/site/site.css`.
 - **Location:** Swansea, UK
 - **Contact:** vineethpradeeps@gmail.com · [LinkedIn](https://www.linkedin.com/in/vineeth-full-stack-developer)
 - **Audience:** recruiters and hiring managers first, then businesses with a product to build.
-- **Promise:** I architect AI-driven business solutions end to end: modern frontends, robust backends
-  and AI agents that turn real business problems into products people use.
+- **Promise:** I design and build AI-driven business solutions end to end, from modern frontends and
+  robust backends to intelligent AI agents, turning real business problems into products people use.
 - **AI wording:** the CV covers AI agent design, model integration and orchestration. Do not claim
   training custom models unless the CV is updated to say so.
 - **Enquiry email:** sent through the Zoho account in `MAIL_*` and delivered to `MAIL_TO`

@@ -18,7 +18,7 @@ export const profile = {
   // Primary deployment. The Netlify copy has no serverless functions, so its form posts here.
   siteUrl: "https://vineethjourney.vercel.app",
   heroStatement:
-    "I architect AI-driven business *solutions* end to end: modern frontends, robust backends and intelligent AI agents that turn real business problems into products people use.",
+    "I design and build AI-driven business *solutions* end to end, from modern frontends and robust backends to intelligent AI agents, turning real business problems into products people use.",
   aboutTitle: "Architecture, full-stack and *AI* in one solution.",
   about: [
     "I'm a Solutions Architect and Full-Stack Developer with 13+ years designing and delivering web, cloud and digital platforms across B2B, B2C and education, from IBM and HCL to my current role as Technical Lead at QTHE in the UK.",

@@ -74,7 +74,6 @@ export default function Intro() {
         <span className="intro-bar">
           <span />
         </span>
-        <span className="label">{profile.location}</span>
       </div>
     </div>
   );
