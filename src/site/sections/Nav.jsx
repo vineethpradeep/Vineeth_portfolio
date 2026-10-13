@@ -111,7 +111,6 @@ export default function Nav() {
         <div className="menu-meta">
           <p>{profile.name}</p>
           <p>{profile.role}</p>
-          <p>{profile.location}</p>
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer">
             LinkedIn

@@ -69,7 +69,6 @@ export default function About() {
           </dl>
         </div>
 
-        <p className="label about-corner about-corner-bl">{profile.location}</p>
         <p className="label about-corner about-corner-br">{profile.tagline}</p>
       </div>
     </section>
