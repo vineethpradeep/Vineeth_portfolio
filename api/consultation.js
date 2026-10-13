@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 import { CONSULTATION_OPTIONS, ROLE_STAGES } from "../src/site/consultationOptions.js";
 
 // Vercel serverless function (also mounted by server.js for local development).
-// Emails a consultation request to the site owner using the MAIL_* environment variables.
+// Emails a hire-me enquiry to MAIL_TO (or MAIL_USERNAME) using the MAIL_* environment variables.
 
 const LIMITS = { name: 120, email: 200, company: 160, phone: 40, jobTitle: 120, rate: 80, jobLink: 500, message: 4000 };
 const CHOICES = CONSULTATION_OPTIONS;
@@ -87,7 +87,8 @@ export default async function handler(req, res) {
     const { html, text } = renderEmail(data);
     await transporter.sendMail({
       from: `"${process.env.MAIL_FROM_NAME}" <${process.env.MAIL_FROM_ADDRESS}>`,
-      to: process.env.MAIL_USERNAME,
+      // MAIL_TO lets enquiries go to a different inbox than the sending account.
+      to: process.env.MAIL_TO || process.env.MAIL_USERNAME,
       replyTo: data.email,
       subject: `Hire me enquiry: ${data.name}${data.company ? ` (${data.company})` : ""}`,
       text,

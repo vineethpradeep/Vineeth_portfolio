@@ -15,6 +15,10 @@ Content lives in `src/site/content.js`; tokens live in `src/site/site.css`.
   and AI agents that turn real business problems into products people use.
 - **AI wording:** the CV covers AI agent design, model integration and orchestration. Do not claim
   training custom models unless the CV is updated to say so.
+- **Enquiry email:** sent through the Zoho account in `MAIL_*` and delivered to `MAIL_TO`
+  (vineethpradeeps@gmail.com); replies go to the enquirer.
+- **Link previews:** `public/og-image.png` (1200x630) is rendered from `og/og-card.html` with
+  `node og/render.mjs`. Re-render it when the role or headline changes.
 - **Primary action:** "Hire me" opens the hire form. It adapts to the engagement type: full-time or
   contract roles ask for job title, salary or day rate, work arrangement and a job description link;
   freelance projects and consultations ask what is needed and the budget.
