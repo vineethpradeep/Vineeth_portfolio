@@ -109,7 +109,6 @@ export default function Closing() {
             <HashLink href="#work">Portfolio</HashLink>
           </div>
           <div className="footer-col">
-            <p>{profile.location}</p>
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
             <p>{profile.role}</p>
           </div>
