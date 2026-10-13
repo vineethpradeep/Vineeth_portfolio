@@ -13,7 +13,7 @@ export const profile = {
   location: "Swansea, UK",
   availability: "Open to roles & projects",
   email: "vineethpradeeps@gmail.com",
-  linkedin: "https://www.linkedin.com/in/vineeth-ui-developer",
+  linkedin: "https://www.linkedin.com/in/vineeth-full-stack-developer",
   cv: "/vineeth_pradeep_cv.pdf",
   // Primary deployment. The Netlify copy has no serverless functions, so its form posts here.
   siteUrl: "https://vineethjourney.vercel.app",

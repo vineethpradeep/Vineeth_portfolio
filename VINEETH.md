@@ -9,7 +9,7 @@ Content lives in `src/site/content.js`; tokens live in `src/site/site.css`.
 - **Name:** Vineeth Pradeep (Vineeth Suvarna Pradeep on the CV)
 - **Role:** Solutions Architect & Full-Stack Developer: frontend, backend and AI-driven solutions. Currently Technical Lead / Full-Stack Developer at QTHE.
 - **Location:** Swansea, UK
-- **Contact:** vineethpradeeps@gmail.com · [LinkedIn](https://www.linkedin.com/in/vineeth-ui-developer)
+- **Contact:** vineethpradeeps@gmail.com · [LinkedIn](https://www.linkedin.com/in/vineeth-full-stack-developer)
 - **Audience:** recruiters and hiring managers first, then businesses with a product to build.
 - **Promise:** I architect AI-driven business solutions end to end: modern frontends, robust backends
   and AI agents that turn real business problems into products people use.

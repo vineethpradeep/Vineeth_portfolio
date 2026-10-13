@@ -725,7 +725,7 @@ export const contactInfo = [
     name: [
       {
         mediaName: "Linkedin",
-        link: "https://www.linkedin.com/in/vineeth-ui-developer",
+        link: "https://www.linkedin.com/in/vineeth-full-stack-developer",
       },
       { mediaName: "Facebook", link: "https://www.facebook.com/login" },
       { mediaName: "Instagram", link: "https://www.instagram.com" },
