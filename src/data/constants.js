@@ -464,9 +464,9 @@ export const projects = [
         projectId: 1,
         title: "Dotseek",
         description:
-          "DotSeek is an innovative IT solutions company specializing in building scalable web and mobile applications. The platform is currently under development and leverages modern technologies including Next.js and React to deliver high-performance, responsive, and secure applications. Designed with scalability in mind, DotSeek’s solutions focus on supporting business growth, digital transformation, and seamless user experiences across devices. Planned enhancements include advanced API integrations, cloud-native deployment strategies, and enhanced UI/UX with interactive components to ensure clients receive cutting-edge, future-ready applications. DotSeek embodies a vision of delivering robust, flexible, and user-focused technology solutions tailored for evolving business needs.",
+          "DotSeek is the live website for a UK AI business-automation company, built with Next.js. It presents AI agents, workflow automation and system integrations for CRM, ERP and finance tools, with an animated live-automations feed, an illustrated lead-to-invoice workflow monitor, solution, industry and insights pages, an on-site Ask DotSeek assistant and a privacy-first, no-tracking cookie policy. The site is fully responsive and built for search, with clear routes to talk to the team.",
         image: "/portfolio_16.png",
-        tags: ["Next.js", "React", "Responsive design"],
+        tags: ["Next.js", "React", "AI automation", "Responsive design", "SEO"],
         category: "webApp",
         github: "",
         webappUrl: "https://www.dotseek.co.uk/",

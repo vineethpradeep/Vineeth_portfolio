@@ -306,7 +306,7 @@ export const work = [
   { title: "AC Jenkins", source: "AC Jenkins Travel Services", image: "/work/portfolio_19.jpg", url: "https://acjenkins-delta.vercel.app/" },
   { title: "Gerwyn Steele", source: "Gerwyn Steele", image: "/work/portfolio_18.jpg", url: "https://gerwynsteele.vercel.app/" },
   { title: "Eisken Properties", source: "Eisken Properties", image: "/work/portfolio_10.jpg", url: "https://www.eiskenproperties.com" },
-  { title: "Dotseek", source: "Dotseek", image: "/work/portfolio_16.jpg", url: "https://www.dotseek.co.uk/" },
+  { title: "Dotseek", source: "Dotseek", image: "/work/dotseek.jpg", url: "https://www.dotseek.co.uk/" },
   { title: "Edumex", source: "Edumex", image: "/work/edumex.jpg", url: "https://www.edumex.co.uk/" },
   { title: "Mubarak Family Restaurant", source: "Mubarak Restaurant", image: "/work/mubarak.jpg", url: "https://www.mubarakhotels.com/" },
   { title: "ThoughtWalks", source: "ThoughtWalks", image: "/work/portfolio_8.jpg", url: "https://www.thoughtwalks.net/" },
@@ -319,6 +319,14 @@ export const gallery = work.slice(0, 10);
 
 // Portfolio overviews, shown in the slot the template uses for testimonials.
 export const overviews = [
+  {
+    title: "Dotseek",
+    sector: "AI · Business automation",
+    image: "/work/dotseek.jpg",
+    url: "https://www.dotseek.co.uk/",
+    vision: "Show growing UK businesses how AI agents and automation can take repetitive work off their teams.",
+    text: "A Next.js site explaining AI agents, workflow automation and integrations, with a live automation feed, a workflow demo and an on-site assistant.",
+  },
   {
     title: "QTHE Accreditation",
     sector: "Education · Accreditation",
