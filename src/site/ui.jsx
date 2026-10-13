@@ -127,8 +127,13 @@ export function Chip({ index, children, tone = "dark", className = "" }) {
 export function HashLink({ href, children, className = "", onNavigate, ...rest }) {
   const onClick = (e) => {
     e.preventDefault();
-    onNavigate?.();
-    scrollToHash(href);
+    if (!onNavigate) {
+      scrollToHash(href);
+      return;
+    }
+    // Closing the menu releases its scroll lock on the next render; scrolling before that is ignored.
+    onNavigate();
+    requestAnimationFrame(() => requestAnimationFrame(() => scrollToHash(href)));
   };
   return (
     <a href={href} className={className} onClick={onClick} {...rest}>

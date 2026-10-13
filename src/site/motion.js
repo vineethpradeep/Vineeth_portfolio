@@ -26,7 +26,7 @@ export function startSmoothScroll() {
 export function scrollToHash(hash) {
   const target = document.querySelector(hash);
   if (!target) return;
-  if (lenis) lenis.scrollTo(target, { duration: 1.4 });
+  if (lenis) lenis.scrollTo(target, { duration: 1.4, force: true });
   else target.scrollIntoView({ behavior: reducedMotion() ? "auto" : "smooth" });
 }
 
