@@ -15,6 +15,8 @@ export const profile = {
   email: "vineethpradeeps@gmail.com",
   linkedin: "https://www.linkedin.com/in/vineeth-ui-developer",
   cv: "/vineeth_pradeep_cv.pdf",
+  // Primary deployment. The Netlify copy has no serverless functions, so its form posts here.
+  siteUrl: "https://vineethjourney.vercel.app",
   heroStatement:
     "I architect AI-driven business *solutions* end to end: modern frontends, robust backends and intelligent AI agents that turn real business problems into products people use.",
   aboutTitle: "Architecture, full-stack and *AI* in one solution.",

@@ -54,6 +54,12 @@ function validate(form) {
   return errors;
 }
 
+// The API only runs on Vercel; other hosts (the Netlify copy) send enquiries there.
+function apiUrl() {
+  const onNetlify = window.location.hostname.endsWith(".netlify.app");
+  return onNetlify ? `${profile.siteUrl}/api/consultation` : "/api/consultation";
+}
+
 // Only send the fields that apply to the chosen engagement type.
 function payload(form) {
   const role = ROLE_STAGES.includes(form.stage);
@@ -145,7 +151,7 @@ function ConsultationDialog({ open, onClose }) {
     }
     setStatus("sending");
     try {
-      const response = await fetch("/api/consultation", {
+      const response = await fetch(apiUrl(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload(form)),

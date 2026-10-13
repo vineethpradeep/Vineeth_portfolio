@@ -63,7 +63,24 @@ function renderEmail(d) {
   return { html, text };
 }
 
+// Sites allowed to call this function from the browser (the Netlify copy and local development).
+const ALLOWED_ORIGINS = [
+  "https://vineethjourney.vercel.app",
+  "https://vineethjourney.netlify.app",
+  "http://localhost:5173",
+];
+
 export default async function handler(req, res) {
+  const origin = req.headers.origin;
+  if (ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Vary", "Origin");
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  }
+  // CORS preflight for JSON posts from the Netlify copy.
+  if (req.method === "OPTIONS") return res.status(204).end();
+
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
     return res.status(405).json({ success: false, error: "Method not allowed" });
