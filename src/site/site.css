@@ -849,6 +849,29 @@ button:focus-visible .roll::after {
   color: var(--color-grey);
 }
 
+/* Current section: red label, with a blinking status block beside its index. */
+.menu-link.is-active {
+  color: var(--color-accent);
+}
+
+.menu-link.is-active .menu-index {
+  position: relative;
+  color: var(--color-accent);
+}
+
+/* Positioned outside the flow so the active label stays aligned with the others. */
+.menu-link.is-active .menu-index::before {
+  content: "";
+  position: absolute;
+  right: calc(100% + 4px);
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  margin-top: -5px;
+  background: var(--color-accent);
+  animation: blink 1.1s steps(1) infinite;
+}
+
 .menu-meta {
   display: flex;
   flex-direction: column;

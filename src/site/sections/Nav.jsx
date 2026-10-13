@@ -92,7 +92,13 @@ export default function Nav() {
       <div id="site-menu" data-lenis-prevent className={`menu ${open ? "is-open" : ""}`} aria-hidden={!open} inert={open ? undefined : ""}>
         <nav className="menu-links" aria-label="Main">
           {navLinks.map((link, i) => (
-            <HashLink key={link.href} href={link.href} className="menu-link" onNavigate={close}>
+            <HashLink
+              key={link.href}
+              href={link.href}
+              className={`menu-link ${active === link.href ? "is-active" : ""}`}
+              aria-current={active === link.href ? "location" : undefined}
+              onNavigate={close}
+            >
               <span className="menu-index">0{i + 1}</span>
               <span className="roll" data-text={link.label}>
                 <span>{link.label}</span>
