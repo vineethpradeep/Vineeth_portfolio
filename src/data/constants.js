@@ -543,18 +543,6 @@ export const projects = [
         live: true,
       },
       {
-        projectId: 7,
-        title: "Accommodation Booking",
-        description:
-          "Accommodation Booking web site developed using angular. bank end contains the full admin control of the site. the front end is a simple responsive site with angular material design. the site is currently in development",
-        image: "/portfolio_17.png",
-        tags: ["Angular", "Responsive design", ".NET Core", "SQL Server"],
-        category: "webApp",
-        github: "",
-        webappUrl: "https://hostelbookingcom.netlify.app/",
-        live: true,
-      },
-      {
         projectId: 8,
         title: "Eisken Properties admin",
         description:
