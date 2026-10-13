@@ -213,6 +213,14 @@ button:focus-visible .roll::after {
   color: var(--color-paper);
 }
 
+.arrow-icon {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  vertical-align: -0.05em;
+  flex-shrink: 0;
+}
+
 .btn-outline .btn-arrow,
 .btn-outline-light .btn-arrow {
   background: transparent;
@@ -2837,12 +2845,11 @@ button:focus-visible .roll::after {
   text-transform: uppercase;
 }
 
-.footer-talk span {
-  display: inline-block;
+.footer-talk .arrow-icon {
   transition: transform 0.4s var(--ease);
 }
 
-.footer-talk:hover span {
+.footer-talk:hover .arrow-icon {
   transform: translate(6px, -6px);
 }
 

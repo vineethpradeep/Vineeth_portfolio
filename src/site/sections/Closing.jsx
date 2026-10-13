@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { gallery, navLinks, profile } from "../content";
 import { gsap, reducedMotion } from "../motion";
-import { BookLink, BrowserFrame, Chip, CvButton, HashLink, StatusTag } from "../ui";
+import { ArrowIcon, BookLink, BrowserFrame, Chip, CvButton, HashLink, StatusTag } from "../ui";
 import { useCv } from "./CvModal";
 
 // Resting tilt and drop height for each card in the closing strip.
@@ -97,7 +97,7 @@ export default function Closing() {
         </div>
         <div className="footer-main">
           <a className="footer-talk" href={`mailto:${profile.email}`} data-cursor="Email">
-            Talk to me now <span aria-hidden="true">↗</span>
+            Talk to me now <ArrowIcon />
           </a>
           <div className="footer-col">
             <a href={profile.linkedin} target="_blank" rel="noreferrer">

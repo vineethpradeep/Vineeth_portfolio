@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { profile } from "../content";
 import { lockScroll } from "../motion";
-import { DigitalButton } from "../ui";
+import { ArrowIcon, DigitalButton } from "../ui";
 
 const CvContext = createContext(() => {});
 
@@ -45,7 +45,7 @@ function CvDialog({ open, onClose }) {
         <div className="cv-actions">
           <DigitalButton label="Download CV" href={profile.cv} download={DOWNLOAD_NAME} cursor="Download" />
           <a className="cv-open" href={profile.cv} target="_blank" rel="noopener noreferrer">
-            Open in new tab ↗
+            Open in new tab <ArrowIcon />
           </a>
           <button type="button" className="work-modal-close" onClick={close}>
             Close <span aria-hidden="true">×</span>

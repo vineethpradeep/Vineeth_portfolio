@@ -33,6 +33,16 @@ const scrambleLabel = (e) => {
   if (label) scrambleTo(label, label.dataset.text);
 };
 
+// Diagonal "external" arrow drawn as SVG: the ↗ character is missing from the site fonts, so phones
+// fell back to a system glyph (or an emoji on iOS).
+export function ArrowIcon({ className = "" }) {
+  return (
+    <svg className={`arrow-icon ${className}`} viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="square" />
+    </svg>
+  );
+}
+
 // Rectangular "terminal" button used for every primary action. Renders a link when given `href`;
 // external links always open in a new tab.
 export function DigitalButton({ label, href, tone = "dark", className = "", cursor, ...rest }) {
@@ -52,7 +62,7 @@ export function DigitalButton({ label, href, tone = "dark", className = "", curs
         {label}
       </span>
       <span className="btn-arrow" aria-hidden="true">
-        ↗
+        <ArrowIcon />
       </span>
     </Tag>
   );
@@ -274,18 +284,45 @@ export function Cursor() {
   const labelRef = useRef(null);
 
   useEffect(() => {
-    if (!window.matchMedia("(pointer: fine)").matches) return;
-    const move = (e) => {
-      setPos({ x: e.clientX, y: e.clientY });
-      const target = e.target.closest?.("[data-cursor]");
+    const track = (x, y, el) => {
+      setPos({ x, y });
+      const target = el?.closest?.("[data-cursor]");
       setLabel(target ? target.dataset.cursor : "");
     };
-    const leave = () => setPos(null);
-    window.addEventListener("pointermove", move);
-    document.addEventListener("pointerleave", leave);
+
+    if (window.matchMedia("(pointer: fine)").matches) {
+      const move = (e) => track(e.clientX, e.clientY, e.target);
+      const leave = () => setPos(null);
+      window.addEventListener("pointermove", move);
+      document.addEventListener("pointerleave", leave);
+      return () => {
+        window.removeEventListener("pointermove", move);
+        document.removeEventListener("pointerleave", leave);
+      };
+    }
+
+    // Touch screens have no hover pointer: the crosshair follows the finger and fades after release.
+    let hideTimer;
+    const touch = (e) => {
+      const t = e.touches[0];
+      if (!t) return;
+      clearTimeout(hideTimer);
+      track(t.clientX, t.clientY, document.elementFromPoint(t.clientX, t.clientY));
+    };
+    const release = () => {
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(() => setPos(null), 700);
+    };
+    window.addEventListener("touchstart", touch, { passive: true });
+    window.addEventListener("touchmove", touch, { passive: true });
+    window.addEventListener("touchend", release);
+    window.addEventListener("touchcancel", release);
     return () => {
-      window.removeEventListener("pointermove", move);
-      document.removeEventListener("pointerleave", leave);
+      clearTimeout(hideTimer);
+      window.removeEventListener("touchstart", touch);
+      window.removeEventListener("touchmove", touch);
+      window.removeEventListener("touchend", release);
+      window.removeEventListener("touchcancel", release);
     };
   }, []);
 
