@@ -522,16 +522,9 @@ export const projects = [
         projectId: 5,
         title: "Mubarak Restaurant",
         description:
-          "Mubarak Family Restaurant is a modern, family-friendly hospitality platform developed using Next.js and React, with global CSS and Google Fonts for styling, and integrated with third-party libraries like Bootstrap, Swiper, and AOS for enhanced user experience. The website was built for live use by the Mubarak Family Restaurant in Marthandam, Kanyakumari, allowing customers to explore the menu, view room and event booking options, and interact with restaurant services online. It features a responsive, multi-device friendly design optimized for seamless browsing on desktop, tablet, and mobile devices. The platform delivers fast page loads, clear navigation, and engaging visuals to provide a robust and user-friendly experience. Planned enhancements include a real-time booking system, dynamic menu updates, customer feedback integration, and advanced SEO optimization for improved discoverability.",
+          "Mubarak Family Restaurant is the live website for a halal multi-cuisine restaurant and hotel in Marthandam, Kanyakumari, built with Next.js and React. Guests can browse the South Indian, Kerala, Chinese and Arabian menu, download it as a PDF, book a table, and explore room bookings and event spaces, with click-to-call reservations and opening hours always in view. The site is fully responsive and fast-loading, with page titles and meta descriptions written so local diners can find it in search.",
         image: "/portfolio_15.png",
-        tags: [
-          "Next JS",
-          "React",
-          "Responsive design",
-          "Bootstrap",
-          "AOS",
-          "Swiper",
-        ],
+        tags: ["Next.js", "React", "Responsive design", "SEO"],
         category: "webApp",
         github: "",
         webappUrl: "https://www.mubarakhotels.com/",
