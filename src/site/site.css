@@ -3217,6 +3217,16 @@ button:focus-visible .roll::after {
 
   .terminal-body {
     font-size: 9px;
+    /* Wrap long lines instead of clipping them at the card edge. */
+    aspect-ratio: auto;
+    min-height: 160px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  /* Keep the scrolling headline clear of the fixed logo and menu button. */
+  .services .marquee {
+    padding-top: 76px;
   }
 
   .hero-letter {
@@ -3234,14 +3244,27 @@ button:focus-visible .roll::after {
   }
 }
 
-/* Short phones: keep the portfolio walkthrough inside one screen. */
+/* Phones: keep the portfolio walkthrough (preview, text, button and progress bars) inside one screen. */
+@media (max-width: 900px) and (max-height: 900px) {
+  .projects-preview {
+    width: min(100%, 280px);
+  }
+}
+
 @media (max-width: 900px) and (max-height: 760px) {
   .projects-facts div:last-child {
     display: none;
   }
+}
+
+/* Very short phones (e.g. 320×568): drop the running title and shrink the preview further. */
+@media (max-width: 900px) and (max-height: 620px) {
+  .projects .marquee {
+    display: none;
+  }
 
   .projects-preview {
-    width: min(100%, 280px);
+    width: min(100%, 200px);
   }
 }
 
