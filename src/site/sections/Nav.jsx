@@ -34,12 +34,14 @@ export default function Nav() {
 
   // Highlight the section currently in the middle of the screen.
   useLayoutEffect(() => {
-    const triggers = navLinks.map((link) =>
+    const triggers = navLinks.map((link, i) =>
       ScrollTrigger.create({
         trigger: link.href,
         start: "top center",
         end: "bottom center",
         onToggle: (self) => self.isActive && setActive(link.href),
+        // Back above the first section (the hero): nothing is current.
+        onLeaveBack: i === 0 ? () => setActive("") : undefined,
       })
     );
     return () => triggers.forEach((t) => t.kill());
