@@ -465,7 +465,7 @@ export const projects = [
         title: "NATC LLC",
         description:
           "NATC LLC (Noor Al Taqa Contracting) is the live bilingual English and Arabic website for a home maintenance and installation company in Dubai, built with React and Vite. It presents tiling, carpentry, painting, electrical, plumbing, AC and CCTV services in clear categories with related-service links, a request-a-service journey, one-tap call and WhatsApp contact, an FAQ and a full right-to-left Arabic version. The site is fully responsive, fast-loading and set up for local search in Dubai.",
-        image: "/work/natc.jpg",
+        image: "/work/natc-home.jpg",
         tags: ["React", "Vite", "English & Arabic", "RTL", "Responsive design", "SEO"],
         category: "webApp",
         github: "",
@@ -565,18 +565,6 @@ export const projects = [
         github: "",
         webappUrl: "",
         live: true,
-      },
-      {
-        projectId: 9,
-        title: "Intelliforger",
-        description:
-          "This website is the official online presence of Intelligent, a project built using React and Next.js. Designed with a modern, responsive interface, it delivers seamless performance across all devices. Intelligent empowers businesses by offering cutting-edge AI and RPA solutions that optimize operations, enhance customer experiences, and drive innovation. Currently under active development, the platform continues to evolve with the goal of transforming organizations through intelligent automation and advanced artificial intelligence capabilities.",
-        image: "/portfolio_14.png",
-        tags: ["Next JS", "React", "Responsive design"],
-        category: "webApp",
-        github: "https://github.com/vineethpradeep/intelliforge.git",
-        webappUrl: "https://intelliforgerltd.netlify.app/",
-        live: false,
       },
       {
         projectId: 10,
