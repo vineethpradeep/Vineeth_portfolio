@@ -461,6 +461,18 @@ export const projects = [
         live: true,
       },
       {
+        projectId: 30,
+        title: "NATC LLC",
+        description:
+          "NATC LLC (Noor Al Taqa Contracting) is the live bilingual English and Arabic website for a home maintenance and installation company in Dubai, built with React and Vite. It presents tiling, carpentry, painting, electrical, plumbing, AC and CCTV services in clear categories with related-service links, a request-a-service journey, one-tap call and WhatsApp contact, an FAQ and a full right-to-left Arabic version. The site is fully responsive, fast-loading and set up for local search in Dubai.",
+        image: "/work/natc.jpg",
+        tags: ["React", "Vite", "English & Arabic", "RTL", "Responsive design", "SEO"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://natcllc.com/en",
+        live: true,
+      },
+      {
         projectId: 1,
         title: "Dotseek",
         description:
