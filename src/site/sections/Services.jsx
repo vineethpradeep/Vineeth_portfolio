@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
-import { gallery, services } from "../content";
+import { gallery, overviews, services } from "../content";
 import { gsap, reducedMotion, ScrollTrigger } from "../motion";
 import { BookLink, BrowserFrame, Chip, Marquee } from "../ui";
 
@@ -15,7 +15,9 @@ const LANES = [
   { left: 44, r: -12 },
 ];
 
-const flyers = LANES.map((lane, i) => ({ ...lane, ...gallery[i % gallery.length] }));
+// Featured portfolio projects fly through first (newest first), then the rest of the gallery.
+const pool = [...overviews, ...gallery.filter((g) => !overviews.some((o) => o.url === g.url))];
+const flyers = LANES.map((lane, i) => ({ ...lane, ...pool[i % pool.length] }));
 
 export default function Services() {
   const root = useRef(null);
