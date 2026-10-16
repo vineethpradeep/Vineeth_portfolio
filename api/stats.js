@@ -1,5 +1,5 @@
 import { timingSafeEqual } from "node:crypto";
-import { dayKey, pipeline, PREFIX, storeKind, storeVarNames } from "./_store.js";
+import { dayKey, pipeline, PREFIX, storeKind } from "./_store.js";
 
 // Vercel serverless function (also mounted by server.js for local development).
 // Returns the visitor stats for the private /dashboard page. Send the password as POST {"password": "..."}
@@ -43,10 +43,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ ok: false });
   }
   if (onVercel && !normalise(process.env.STATS_PASSWORD)) {
-    return res.status(503).json({ ok: false, error: "STATS_PASSWORD is not set in Vercel.", store: storeKind });
+    return res.status(503).json({ ok: false, error: "STATS_PASSWORD is not set in Vercel.", store: storeKind === "memory" ? "memory" : "redis" });
   }
   // `store` is harmless to reveal and tells whether the database is connected ("redis") or not ("memory").
-  if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password.", store: storeKind, vars: storeVarNames });
+  if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password.", store: storeKind === "memory" ? "memory" : "redis" });
 
   const days = [];
   for (let i = DAYS - 1; i >= 0; i--) days.push(dayKey(new Date(Date.now() - i * 864e5)));

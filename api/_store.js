@@ -23,9 +23,6 @@ const redisUrl = !(url && token) ? envBySuffix("REDIS_URL", "KV_URL") : "";
 
 export const storeKind = url && token ? "redis" : redisUrl ? "redis-tcp" : "memory";
 
-// Names (never values) of the database-related variables present, to diagnose a missing connection.
-export const storeVarNames = Object.keys(process.env).filter((k) => /REDIS|KV_|UPSTASH/i.test(k)).sort();
-
 let tcpClient;
 async function tcpPipeline(commands) {
   if (!tcpClient) {
