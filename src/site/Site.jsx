@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./site.css";
 import { ScrollTrigger, startSmoothScroll } from "./motion";
 import { Cursor, ScrollProgress } from "./ui";
+import { trackView } from "./track";
 import Intro from "./sections/Intro";
 import { ConsultationProvider } from "./sections/Consultation";
 import { CvProvider } from "./sections/CvModal";
@@ -21,6 +22,7 @@ export default function Site() {
   useEffect(() => {
     // Always start at the top: the intro and hero are scroll-driven, so a restored position looks broken.
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    trackView();
     const stop = startSmoothScroll();
     // Fonts and images change section heights after first paint.
     const refresh = () => ScrollTrigger.refresh();

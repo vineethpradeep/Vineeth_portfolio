@@ -3,6 +3,8 @@ import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import cors from "cors";
 import consultation from "./api/consultation.js";
+import track from "./api/track.js";
+import stats from "./api/stats.js";
 
 dotenv.config();
 const app = express();
@@ -10,6 +12,8 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/api/consultation", consultation);
+app.post("/api/track", track);
+app.get("/api/stats", stats);
 
 app.post("/api/contact", async (req, res) => {
   const { name, subject, message } = req.body;
