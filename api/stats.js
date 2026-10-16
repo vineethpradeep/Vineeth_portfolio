@@ -46,7 +46,11 @@ export default async function handler(req, res) {
     return res.status(503).json({ ok: false, error: "STATS_PASSWORD is not set in Vercel.", store: storeKind === "memory" ? "memory" : "redis" });
   }
   // `store` is harmless to reveal and tells whether the database is connected ("redis") or not ("memory").
-  if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password.", store: storeKind === "memory" ? "memory" : "redis" });
+  // TEMPORARY diagnostic: names only (never values) of storage-type variables, to see which database is connected.
+  const storageVars = Object.keys(process.env)
+    .filter((k) => /REDIS|KV_|UPSTASH|POSTGRES|DATABASE|NEON|EDGE_CONFIG|BLOB|MONGO|SUPABASE|PG/i.test(k))
+    .sort();
+  if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password.", store: storeKind === "memory" ? "memory" : "redis", storageVars });
 
   const days = [];
   for (let i = DAYS - 1; i >= 0; i--) days.push(dayKey(new Date(Date.now() - i * 864e5)));
