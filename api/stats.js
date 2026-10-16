@@ -43,9 +43,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ ok: false });
   }
   if (onVercel && !normalise(process.env.STATS_PASSWORD)) {
-    return res.status(503).json({ ok: false, error: "STATS_PASSWORD is not set in Vercel." });
+    return res.status(503).json({ ok: false, error: "STATS_PASSWORD is not set in Vercel.", store: storeKind });
   }
-  if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password." });
+  // `store` is harmless to reveal and tells whether the database is connected ("redis") or not ("memory").
+  if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password.", store: storeKind });
 
   const days = [];
   for (let i = DAYS - 1; i >= 0; i--) days.push(dayKey(new Date(Date.now() - i * 864e5)));

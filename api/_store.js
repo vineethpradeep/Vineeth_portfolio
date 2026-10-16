@@ -4,8 +4,19 @@
 // Local development without those variables: an in-memory store, so the dashboard works on localhost.
 // The leading underscore keeps Vercel from exposing this file as an API route.
 
-const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+// Vercel lets you choose a prefix when connecting the database (e.g. STORAGE_KV_REST_API_URL),
+// so match the variable names by suffix rather than exact name.
+function envBySuffix(...suffixes) {
+  for (const suffix of suffixes) {
+    if (process.env[suffix]) return process.env[suffix];
+    const key = Object.keys(process.env).find((k) => k.endsWith(`_${suffix}`) && !k.includes("READ_ONLY") && process.env[k]);
+    if (key) return process.env[key];
+  }
+  return "";
+}
+
+const url = envBySuffix("UPSTASH_REDIS_REST_URL", "KV_REST_API_URL");
+const token = envBySuffix("UPSTASH_REDIS_REST_TOKEN", "KV_REST_API_TOKEN");
 
 export const storeKind = url && token ? "redis" : "memory";
 
