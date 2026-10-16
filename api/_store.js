@@ -1,6 +1,6 @@
 // Tiny Redis-command store for the visitor stats.
-// Production: Upstash Redis over its REST API (env UPSTASH_REDIS_REST_URL/TOKEN, or the KV_REST_API_* names
-// Vercel adds when the database is connected from the Storage tab).
+// Production: Upstash Redis over its REST API (UPSTASH_REDIS_REST_URL/TOKEN or KV_REST_API_*, any prefix),
+// or any Redis via a redis:// connection string (REDIS_URL), e.g. Vercel's Redis Cloud database.
 // Local development without those variables: an in-memory store, so the dashboard works on localhost.
 // The leading underscore keeps Vercel from exposing this file as an API route.
 
@@ -18,7 +18,26 @@ function envBySuffix(...suffixes) {
 const url = envBySuffix("UPSTASH_REDIS_REST_URL", "KV_REST_API_URL");
 const token = envBySuffix("UPSTASH_REDIS_REST_TOKEN", "KV_REST_API_TOKEN");
 
-export const storeKind = url && token ? "redis" : "memory";
+// Vercel's "Redis" (Redis Cloud) database only provides a redis:// connection string.
+const redisUrl = !(url && token) ? envBySuffix("REDIS_URL", "KV_URL") : "";
+
+export const storeKind = url && token ? "redis" : redisUrl ? "redis-tcp" : "memory";
+
+// Names (never values) of the database-related variables present, to diagnose a missing connection.
+export const storeVarNames = Object.keys(process.env).filter((k) => /REDIS|KV_|UPSTASH/i.test(k)).sort();
+
+let tcpClient;
+async function tcpPipeline(commands) {
+  if (!tcpClient) {
+    const { createClient } = await import("redis");
+    tcpClient = createClient({ url: redisUrl, socket: { connectTimeout: 5000 } });
+    tcpClient.on("error", (err) => console.error("Redis error:", err.message));
+    await tcpClient.connect();
+  }
+  const multi = tcpClient.multi();
+  for (const cmd of commands) multi.addCommand(cmd.map(String));
+  return multi.exec();
+}
 
 async function redisPipeline(commands) {
   const res = await fetch(`${url}/pipeline`, {
@@ -53,6 +72,7 @@ function memRun([cmd, key, ...args]) {
 
 export async function pipeline(commands) {
   if (storeKind === "redis") return redisPipeline(commands);
+  if (storeKind === "redis-tcp") return tcpPipeline(commands);
   return commands.map(memRun);
 }
 
