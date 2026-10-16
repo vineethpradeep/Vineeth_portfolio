@@ -3347,6 +3347,38 @@ button:focus-visible .roll::after {
   align-self: stretch;
 }
 
+.dash-login .field > label {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.dash-pass {
+  position: relative;
+}
+
+.dash-pass input {
+  padding-right: 40px;
+}
+
+.dash-eye {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  color: var(--color-grey);
+  transform: translateY(-50%);
+}
+
+.dash-eye:hover,
+.dash-eye[aria-pressed="true"] {
+  color: var(--color-ink);
+}
+
 .dash-error {
   color: var(--color-accent);
   font-size: var(--text-xs);

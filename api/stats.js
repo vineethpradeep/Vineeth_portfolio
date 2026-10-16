@@ -2,17 +2,29 @@ import { timingSafeEqual } from "node:crypto";
 import { dayKey, pipeline, PREFIX, storeKind } from "./_store.js";
 
 // Vercel serverless function (also mounted by server.js for local development).
-// Returns the visitor stats for the private /dashboard page. Requires "Authorization: Bearer <STATS_PASSWORD>".
+// Returns the visitor stats for the private /dashboard page. Send the password as POST {"password": "..."}
+// (or "Authorization: Bearer <STATS_PASSWORD>"); it must match STATS_PASSWORD.
 // Locally, when STATS_PASSWORD is not set, the password is "local-dev".
 
 const DAYS = 30;
 const onVercel = Boolean(process.env.VERCEL);
 
+// Tolerates stray spaces/newlines and wrapping quotes in the saved value (common copy-paste slips).
+const normalise = (value) => String(value || "").trim().replace(/^(['"])(.*)\1$/s, "$2");
+
+function givenPassword(req) {
+  let body = req.body;
+  if (typeof body === "string") {
+    try { body = JSON.parse(body); } catch { body = {}; }
+  }
+  if (body && typeof body.password === "string") return body.password;
+  return String(req.headers.authorization || "").replace(/^Bearer\s+/i, "");
+}
+
 function authorised(req) {
-  const expected = process.env.STATS_PASSWORD || (onVercel ? "" : "local-dev");
+  const expected = normalise(process.env.STATS_PASSWORD) || (onVercel ? "" : "local-dev");
   if (!expected) return false;
-  const given = String(req.headers.authorization || "").replace(/^Bearer\s+/i, "");
-  const a = Buffer.from(given);
+  const a = Buffer.from(normalise(givenPassword(req)));
   const b = Buffer.from(expected);
   return a.length === b.length && timingSafeEqual(a, b);
 }
@@ -26,11 +38,11 @@ const toPairs = (flat) => {
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
   res.setHeader("X-Robots-Tag", "noindex");
-  if (req.method !== "GET") {
-    res.setHeader("Allow", "GET");
+  if (req.method !== "GET" && req.method !== "POST") {
+    res.setHeader("Allow", "GET, POST");
     return res.status(405).json({ ok: false });
   }
-  if (onVercel && !process.env.STATS_PASSWORD) {
+  if (onVercel && !normalise(process.env.STATS_PASSWORD)) {
     return res.status(503).json({ ok: false, error: "STATS_PASSWORD is not set in Vercel." });
   }
   if (!authorised(req)) return res.status(401).json({ ok: false, error: "Wrong password." });

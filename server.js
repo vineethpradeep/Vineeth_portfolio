@@ -14,6 +14,7 @@ app.use(cors());
 app.post("/api/consultation", consultation);
 app.post("/api/track", track);
 app.get("/api/stats", stats);
+app.post("/api/stats", stats);
 
 app.post("/api/contact", async (req, res) => {
   const { name, subject, message } = req.body;

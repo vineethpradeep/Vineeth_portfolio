@@ -59,8 +59,19 @@ function useNoIndex() {
   }, []);
 }
 
+function EyeIcon({ open }) {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" fill="none" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeWidth="1.6" />
+      {!open && <path d="M4 4l16 16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="square" />}
+    </svg>
+  );
+}
+
 function Login({ onSubmit, error, busy }) {
   const [value, setValue] = useState("");
+  const [show, setShow] = useState(false);
   return (
     <form
       className="dash-login"
@@ -69,10 +80,31 @@ function Login({ onSubmit, error, busy }) {
         if (value) onSubmit(value);
       }}
     >
-      <label className="field">
-        <span>Password</span>
-        <input type="password" autoComplete="current-password" value={value} onChange={(e) => setValue(e.target.value)} autoFocus />
-      </label>
+      <div className="field">
+        <label htmlFor="dash-pass">Password</label>
+        <div className="dash-pass">
+          <input
+            id="dash-pass"
+            type={show ? "text" : "password"}
+            autoComplete="current-password"
+            autoCapitalize="off"
+            autoCorrect="off"
+            spellCheck={false}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            autoFocus
+          />
+          <button
+            type="button"
+            className="dash-eye"
+            onClick={() => setShow((v) => !v)}
+            aria-label={show ? "Hide password" : "Show password"}
+            aria-pressed={show}
+          >
+            <EyeIcon open={show} />
+          </button>
+        </div>
+      </div>
       {error && (
         <p className="dash-error" role="alert">
           {error}
@@ -227,7 +259,12 @@ export default function Dashboard() {
     setBusy(true);
     setError("");
     try {
-      const res = await fetch("/api/stats", { headers: { Authorization: `Bearer ${password}` } });
+      // Sent in the body (not a header) so any character in the password works.
+      const res = await fetch("/api/stats", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
       const json = await res.json().catch(() => ({}));
       if (!res.ok || !json.ok) {
         setError(json.error || "Could not load the stats.");
