@@ -114,7 +114,7 @@ export default function Closing() {
             </button>
             <HashLink href="#work">Portfolio</HashLink>
             <a href={profile.studio.url} target="_blank" rel="noopener noreferrer">
-              Project quotes &amp; development · {profile.studio.name}
+              Project quotes · {profile.studio.name}
             </a>
           </div>
           <div className="footer-col">
