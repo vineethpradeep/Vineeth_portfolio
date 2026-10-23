@@ -68,6 +68,12 @@ export default function Closing() {
           <BookLink />
           <CvButton tone="outline" />
         </div>
+        <p className="cta-studio">
+          Need a website, app or AI automation built?{" "}
+          <a href={profile.studio.url} target="_blank" rel="noopener noreferrer" data-cursor="Quote">
+            Get a project quote from {profile.studio.name} <ArrowIcon />
+          </a>
+        </p>
         <div className="strip" aria-hidden="true">
           {STRIP.map((card, i) => (
             <div
@@ -107,6 +113,9 @@ export default function Closing() {
               View &amp; download CV
             </button>
             <HashLink href="#work">Portfolio</HashLink>
+            <a href={profile.studio.url} target="_blank" rel="noopener noreferrer">
+              Project quotes &amp; development · {profile.studio.name}
+            </a>
           </div>
           <div className="footer-col">
             <a href={`mailto:${profile.email}`}>{profile.email}</a>

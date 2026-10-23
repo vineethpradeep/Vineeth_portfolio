@@ -17,6 +17,8 @@ export const profile = {
   cv: "/vineeth_pradeep_cv.pdf",
   // Primary deployment. The Netlify copy has no serverless functions, so its form posts here.
   siteUrl: "https://vineethjourney.vercel.app",
+  // Project quotes and development work go through DotSeek.
+  studio: { name: "DotSeek", url: "https://www.dotseek.co.uk/" },
   heroStatement:
     "I design and build AI-driven business *solutions* end to end, from modern frontends and robust backends to intelligent AI agents, turning real business problems into products people use.",
   aboutTitle: "Architecture, full-stack and *AI* in one solution.",
