@@ -331,6 +331,14 @@ export const overviews = [
     text: "A Next.js site explaining AI agents, workflow automation and integrations, with a live automation feed, a workflow demo and an on-site assistant.",
   },
   {
+    title: "Diago Spice",
+    sector: "Hospitality · Restaurant & bar",
+    image: "/work/diagospice.jpg",
+    url: "https://diagospice.co.uk/",
+    vision: "Fill tables and weekend buffets at a Swansea restaurant, and take delivery orders without an app.",
+    text: "A React site with the full delivery menu, weekend buffet and meal deals, WhatsApp and QR-code ordering, and a menu to download or share.",
+  },
+  {
     title: "NATC LLC",
     tab: "NATC",
     sector: "Home services · Dubai",
@@ -338,14 +346,6 @@ export const overviews = [
     url: "https://natcllc.com/en",
     vision: "Make booking trusted home maintenance in Dubai as simple as one call, in English or Arabic.",
     text: "A bilingual React site with clear service categories, request-a-service and call or WhatsApp contact, plus a full right-to-left Arabic version.",
-  },
-  {
-    title: "Diago Spice",
-    sector: "Hospitality · Restaurant & bar",
-    image: "/work/diagospice.jpg",
-    url: "https://diagospice.co.uk/",
-    vision: "Fill tables and weekend buffets at a Swansea restaurant, and take delivery orders without an app.",
-    text: "A React site with the full delivery menu, weekend buffet and meal deals, WhatsApp and QR-code ordering, and a menu to download or share.",
   },
   {
     title: "QTHE Accreditation",
