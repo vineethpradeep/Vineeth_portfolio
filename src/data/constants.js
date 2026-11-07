@@ -461,6 +461,18 @@ export const projects = [
         live: true,
       },
       {
+        projectId: 31,
+        title: "Diago Spice",
+        description:
+          "Diago Spice is the live website for an Indian and Western restaurant and bar in Clase, Swansea, built with React and Vite. It has a themed 'Indian spice meets the Wild West' design, a weekend buffet banner, the full delivery menu organised by category with prices and meal deals, WhatsApp and QR-code ordering, a menu to download or share, delivery charges and one-tap calling to reserve. The site is fully responsive and set up for local search in Swansea.",
+        image: "/work/diagospice.jpg",
+        tags: ["React", "Vite", "Responsive design", "WhatsApp ordering", "SEO"],
+        category: "webApp",
+        github: "",
+        webappUrl: "https://diagospice.co.uk/",
+        live: true,
+      },
+      {
         projectId: 30,
         title: "NATC LLC",
         description:
