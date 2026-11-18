@@ -1448,6 +1448,18 @@ button:focus-visible .roll::after {
   width: 100%;
 }
 
+/* Long write-ups: keep the screenshot in view at the top while the text scrolls. */
+@media (min-width: 901px) {
+  .work-modal-media {
+    align-items: start;
+  }
+
+  .work-modal-media .frame {
+    position: sticky;
+    top: var(--space-6);
+  }
+}
+
 .work-modal-body {
   display: flex;
   flex-direction: column;

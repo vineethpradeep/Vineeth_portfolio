@@ -51,7 +51,13 @@ export default function WorkModal({ item, onClose }) {
                 <li key={tag}>{tag}</li>
               ))}
             </ul>
-            <p className="work-modal-text">{item.description}</p>
+            {String(item.description || "")
+              .split(/\n{2,}/)
+              .map((para, i) => (
+                <p key={i} className="work-modal-text">
+                  {para}
+                </p>
+              ))}
             <DigitalButton label="Visit live site" href={item.url} className="work-modal-visit" cursor="Visit" />
           </div>
         </div>

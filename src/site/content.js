@@ -187,12 +187,13 @@ export const experience = [
     place: "Swansea, UK",
     date: "Jul 2024 – Present",
     points: [
+      "Diago Spice: the complete business system for a Swansea restaurant, bar and event hall, with a React and TypeScript front end on an ASP.NET Core API with PostgreSQL, SignalR and Azure. It runs online ordering for delivery and collection, Reception order management for website, phone, WhatsApp and table orders, a Kitchen display, a Waiter phone app with table bills, a Delivery Staff app with live GPS tracking and ETA, myPOS payments and payment links, WhatsApp ordering and campaigns, and staff shifts with an Owner dashboard.",
       "Eisken Properties: a live property platform for a Swansea letting agency, built with Laravel and PostgreSQL, with role-based access for admins, agents and users, Google sign-in, listings management, Mapbox maps, automated emails and an admin dashboard for bookings and enquiries.",
       "Bilingual (English and Welsh) React and Vite sites for Swansea businesses: AC Jenkins Travel Services, with a guided quote-enquiry journey, reviews and live chat, and Gerwyn Steele, a yoga, Wing Chun and sound-healing practice with schedules, pricing and bookings.",
       "A hotel booking system with React, Supabase and PostgreSQL, featuring real-time reservations and analytics dashboards, and ThoughtWalks, an Angular platform for mentor and student enrolment, scheduling and progress tracking.",
       "SEO, structured metadata, privacy-first cookie consent and performance work across client sites, deployed on Vercel.",
     ],
-    tech: ["Laravel", "PHP", "PostgreSQL", "React", "Vite", "Supabase", "Angular", "SEO"],
+    tech: ["React", "TypeScript", "ASP.NET Core", "PostgreSQL", "SignalR", "Laravel", "PHP", "Supabase", "Angular", "SEO"],
   },
   {
     role: "Senior Application Developer",
@@ -332,11 +333,11 @@ export const overviews = [
   },
   {
     title: "Diago Spice",
-    sector: "Hospitality · Restaurant & bar",
+    sector: "Hospitality · Restaurant management",
     image: "/work/diagospice.jpg",
     url: "https://diagospice.co.uk/",
-    vision: "Fill tables and weekend buffets at a Swansea restaurant, and take delivery orders without an app.",
-    text: "A React site with the full delivery menu, weekend buffet and meal deals, WhatsApp and QR-code ordering, and a menu to download or share.",
+    vision: "Run a whole restaurant from one system: online orders, the kitchen, tables, deliveries and payments.",
+    text: "Online delivery and collection, Reception order management, a Kitchen display, Waiter and table QR ordering, a Delivery Staff app with live tracking, myPOS payments, WhatsApp ordering and an Owner dashboard, on React and ASP.NET Core.",
   },
   {
     title: "NATC LLC",

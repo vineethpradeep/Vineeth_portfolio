@@ -464,9 +464,14 @@ export const projects = [
         projectId: 31,
         title: "Diago Spice",
         description:
-          "Diago Spice is the live website for an Indian and Western restaurant and bar in Clase, Swansea, built with React and Vite. It has a themed 'Indian spice meets the Wild West' design, a weekend buffet banner, the full delivery menu organised by category with prices and meal deals, WhatsApp and QR-code ordering, a menu to download or share, delivery charges and one-tap calling to reserve. The site is fully responsive and set up for local search in Swansea.",
+          "Diago Spice is the complete business system for an Indian and Western restaurant, bar and event hall in Clase, Swansea: a React, TypeScript and Vite front end on an ASP.NET Core modular monolith with PostgreSQL, SignalR, Redis and Azure.\n\n" +
+          "Online ordering: delivery and collection with postcode and distance delivery zones, fees, minimum orders and free-delivery thresholds, road miles from pgRouting, dish options, leave-out ingredients and allergy declarations, and a customer order page and live tracking map with ETA.\n\n" +
+          "Order and kitchen management: one order ledger for website, phone, WhatsApp and table orders, with Reception accepting, verifying and dispatching from a live queue, and a Kitchen display with Chef PIN, tickets showing type, source, area, distance and timing, cooking and ready timers, and collection handover by code.\n\n" +
+          "Front of house and delivery: guest QR table menus with group ordering; a Waiter phone app with pairing code, PIN, Face ID and push notifications for orders, table bills, part and split payments; and a Delivery Staff PWA to claim jobs, check packages, share live GPS on a MapLibre map and hand over by delivery code.\n\n" +
+          "Payments: online myPOS checkout, payment links by WhatsApp, cash, card reader and Tap to Pay recording with manager verification, event deposits, refunds, cash drawers and driver cash, numbered receipts, reconciliation and end of day.\n\n" +
+          "WhatsApp and business management: catalogue ordering on the Meta Cloud API, a shared Reception inbox, templates, consented customer audiences, campaigns, automation rules and cost controls; staff roles, duties, shifts and live presence; an Owner dashboard with transactions and audit logs; and an admin editor for the menu, offers, weekend buffet and QR and print menus.",
         image: "/work/diagospice.jpg",
-        tags: ["React", "Vite", "Responsive design", "WhatsApp ordering", "SEO"],
+        tags: ["React", "TypeScript", "ASP.NET Core", "PostgreSQL", "SignalR", "Azure", "Online ordering", "Kitchen display", "Live delivery tracking", "myPOS payments", "WhatsApp Cloud API", "PWA"],
         category: "webApp",
         github: "",
         webappUrl: "https://diagospice.co.uk/",
